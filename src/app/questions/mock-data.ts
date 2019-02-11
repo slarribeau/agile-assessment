@@ -2,23 +2,19 @@ import { Item } from './item';
 
             export const ITEMS: Item[] = [
                 {
-                    name:'Item 1',
-                    value:'item_1'
+                    name:'New to Agile with twenty-five or fewer developers',
+                    value:'lt.year.lt.25'
                 },
                 {
-                    name:'Item 2',
-                    value:'item_2'
+                    name:'New to Agile with MORE than twenty-five developers',
+                    value:'lt.year.gt.25'
                 },
                 {
-                    name:'Item 3',
-                    value:'item_3'
+                    name:'1+ year(s) using Agile with twenty-five or fewer developers.',
+                    value:'gt.year.lt.25'
                 },
                 {
-                    name:'Item 4',
-                    value:'item_4'
-                    },
-                    {
-                        name:'Item 5',
-                        value:'item_5'
-                    }
+                    name:'1+ year(s) using Agile with MORE than twenty-five developers.',
+                    value:'gt.year.gt.25'
+                }
             ];
