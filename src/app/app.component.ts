@@ -7,10 +7,13 @@ import {C2pInputService} from './services/c2p-input.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  levelIndex = "uninit";
+
   constructor(private myInputService:C2pInputService) {
     myInputService.child$.subscribe(
       event => {
         console.log("parent just got: " + event);
+        this.levelIndex=event;
       });
   }
   
