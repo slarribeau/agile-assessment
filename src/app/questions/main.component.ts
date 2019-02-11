@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+
 import { Item } from './item';
 import { ITEMS } from './mock-data';
 
@@ -35,6 +36,8 @@ export class MainQuestionComponent implements OnInit {
   radioSelectedString: string;
   itemsList: Item[] = ITEMS;
 
+  @Output() public childEvent = new EventEmitter();
+
 
   constructor() {
     this.itemsList = ITEMS;
@@ -50,7 +53,10 @@ export class MainQuestionComponent implements OnInit {
   }
   // Radio Change Event
   onItemChange(item) {
+    console.log(item)
     this.getSelecteditem();
+    console.log("about to emit from main component to parent")
+    this.childEvent.emit("scott");
   }
 
 }

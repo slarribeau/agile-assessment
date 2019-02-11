@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'survey';
+
+  processChildEvent(str) {
+    console.log("processChildEvent")
+    console.log(str)
+  }
 }
