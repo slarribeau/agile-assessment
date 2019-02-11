@@ -7,6 +7,7 @@ import {C2pInputService} from './services/c2p-input.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'survey';
   levelIndex = "uninit";
 
   constructor(private myInputService:C2pInputService) {
@@ -16,8 +17,8 @@ export class AppComponent {
         this.levelIndex=event;
       });
   }
-  
-  title = 'survey';
+  prevButton() {alert("prev")}
+  nextButton() {alert("next")}
 
   processChildEvent(str) {
     console.log("processChildEvent")
