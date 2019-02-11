@@ -8,6 +8,7 @@ import {q2LTyearLT25Component} from './questions/q2.lt.year.lt.25.component';
 import {q3LTyearLT25Component} from '././questions/q3.lt.year.lt.25.component';
 import {MainQuestionComponent} from './questions/main.component';
 import {Test3Component} from './test3/test3.component'
+import {C2pInputService} from './services/c2p-input.service'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import {Test3Component} from './test3/test3.component'
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [C2pInputService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

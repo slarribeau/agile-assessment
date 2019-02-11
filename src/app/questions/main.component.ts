@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {C2pInputService} from '../services/c2p-input.service'
 
 import { Item } from './item';
 import { ITEMS } from './mock-data';
@@ -39,7 +40,7 @@ export class MainQuestionComponent implements OnInit {
   @Output() public childEvent = new EventEmitter();
 
 
-  constructor() {
+  constructor(private myInputService:C2pInputService) {
     this.itemsList = ITEMS;
     //Selecting Default Radio item here
     this.radioSelected = "item_3";
@@ -57,6 +58,7 @@ export class MainQuestionComponent implements OnInit {
     this.getSelecteditem();
     console.log("about to emit from main component to parent")
     this.childEvent.emit("scott");
+    this.myInputService.notifyParent(this.radioSelected);
   }
 
 }
