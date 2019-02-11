@@ -19,9 +19,4 @@ export class AppComponent {
   }
   prevButton() {alert("prev")}
   nextButton() {alert("next")}
-
-  processChildEvent(str) {
-    console.log("processChildEvent")
-    console.log(str)
-  }
 }
