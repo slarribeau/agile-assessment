@@ -23,5 +23,15 @@ export class AppComponent {
       });
   }
   prevButton() {alert(this.router.url)}
-  nextButton() {alert(this.router.url)}
+  nextButton() {
+    if (this.router.url == "/") {
+      this.router.navigateByUrl("/q1");
+    } else if (this.router.url == "/q1") {
+      this.router.navigateByUrl("/q2");
+    } else if (this.router.url == "/q2") {
+      this.router.navigateByUrl("/q3");
+    } else if (this.router.url == "/q3") {
+      this.router.navigateByUrl("/q4");
+    }
+  }
 }
