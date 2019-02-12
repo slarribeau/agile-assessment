@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-test2',
+  selector: 'app-q1LTyearLT25',
   template: `
     <p>
       Q1 (less than year && less than 25)!

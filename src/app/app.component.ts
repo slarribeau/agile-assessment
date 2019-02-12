@@ -25,13 +25,19 @@ export class AppComponent {
   prevButton() {alert(this.router.url)}
   nextButton() {
     if (this.router.url == "/") {
-      this.router.navigateByUrl("/q1");
-    } else if (this.router.url == "/q1") {
-      this.router.navigateByUrl("/q2");
-    } else if (this.router.url == "/q2") {
-      this.router.navigateByUrl("/q3");
-    } else if (this.router.url == "/q3") {
-      this.router.navigateByUrl("/q4");
+      if (this.levelIndex == "lt.year.lt.25") {
+        this.router.navigateByUrl("/q1ltyearlt25");
+      } else {
+        this.router.navigateByUrl("/q1gtyearlt25");
+      }
+    } else if (this.router.url == "/q1ltyearlt25") {
+      this.router.navigateByUrl("/q2ltyearlt25");
+    } else if (this.router.url == "/q2ltyearlt25") {
+      this.router.navigateByUrl("/q3ltyearlt25");
+    } else if (this.router.url == "/q1gtyearlt25") {
+      this.router.navigateByUrl("/q2gtyearlt25");
+    } else if (this.router.url == "/q2gtyearlt25") {
+      this.router.navigateByUrl("/q3gtyearlt25");
     }
   }
 }
