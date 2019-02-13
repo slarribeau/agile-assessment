@@ -3,7 +3,6 @@ import { Item } from './item';
 import {Q1Service} from '../services/q1.service'
 import {Q1Component} from './q1.component'
 
-
 @Component({
   selector: 'app-q1GTyearLT25',
   template: `
