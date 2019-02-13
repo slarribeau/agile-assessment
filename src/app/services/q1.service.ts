@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Subject} from 'rxjs';
 
 @Injectable()
-export class C2p2InputService {
+export class Q1Service {
   constructor() { }
 
   // Observable source

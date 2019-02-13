@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Item } from './item';
-import {C2p2InputService} from '../services/c2p2-input.service'
+import {Q1Service} from '../services/q1.service'
 
 
 
@@ -42,7 +42,7 @@ export class q1LTyearLT25Component implements OnInit {
   radioSel: any;
   radioSelected: string;
   radioSelectedString: string;
-  constructor(private myInputService:C2p2InputService) {
+  constructor(private myInputService:Q1Service) {
     this.itemsList = ITEMS;
     //Selecting Default Radio item here
     this.radioSelected = "item_3";

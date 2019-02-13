@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {C2pInputService} from './services/c2p-input.service'
-import {C2p2InputService} from './services/c2p2-input.service'
+import {MasterService} from './services/master.service'
+import {Q1Service} from './services/q1.service'
 
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
@@ -17,8 +17,8 @@ export class AppComponent {
   questionIndex = "uninit";
 //  constructor(private router: Router) {
 
-  constructor(private myInputService:C2pInputService, 
-              private myInputService2:C2p2InputService, 
+  constructor(private myInputService:MasterService, 
+              private myInputService2:Q1Service, 
               private router: Router) {
     myInputService.child$.subscribe(
       event => {

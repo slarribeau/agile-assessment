@@ -11,8 +11,8 @@ import {q2GTyearLT25Component} from './questions/q2.gt.year.lt.25.component';
 import {q3GTyearLT25Component} from './questions/q3.gt.year.lt.25.component';
 import {MainQuestionComponent} from './questions/main.component';
 import {Test3Component} from './test3/test3.component'
-import {C2pInputService} from './services/c2p-input.service'
-import {C2p2InputService} from './services/c2p2-input.service'
+import {MasterService} from './services/master.service'
+import {Q1Service} from './services/q1.service'
 
 
 @NgModule({
@@ -32,7 +32,7 @@ import {C2p2InputService} from './services/c2p2-input.service'
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [C2pInputService, C2p2InputService],
+  providers: [MasterService, Q1Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
