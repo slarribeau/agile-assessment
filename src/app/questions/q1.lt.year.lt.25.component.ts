@@ -6,7 +6,7 @@ import {Q1Component} from './q1.component'
 @Component({
   selector: 'app-q1LTyearLT25',
   template: `
-  <app-q1 [itemsList]=ITEMS></app-q1>
+  <app-q1 [itemsList1]=ITEMS></app-q1>
   `,
   styles: []
 })

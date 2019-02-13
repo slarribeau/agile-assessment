@@ -6,11 +6,11 @@ import {Q1Service} from '../services/q1.service'
   selector: 'app-q1',
   template: `
     <p>
-      Q1 (greater than year && less than 25)!
+      Q1
     </p>
     <div>
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="let item of itemsList">
+      <li class="list-group-item" *ngFor="let item of itemsList1">
         <input type="radio" [(ngModel)]="questionSelected" name="list_name" value="{{item.value}}" (change)="onItemChange(item)" />
         {{item.name}}
       </li>
@@ -22,13 +22,13 @@ import {Q1Service} from '../services/q1.service'
 
 export class Q1Component implements OnInit {
   questionSelected: string;
-  @Input() itemsList: Item[]; 
+  @Input() itemsList1: Item[]; 
 
   constructor(private myInputService:Q1Service) {}
 
   ngOnInit() {
     console.log("constructor");
-    console.log(this.itemsList)
+    console.log(this.itemsList1)
   }
   
   onItemChange(item) {

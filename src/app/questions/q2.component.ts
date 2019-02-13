@@ -3,14 +3,14 @@ import { Item } from './item';
 import {Q2Service} from '../services/q2.service'
 
 @Component({
-  selector: 'app-q1',
+  selector: 'app-q2',
   template: `
     <p>
-      Q1 (greater than year && less than 25)!
+      Q2!
     </p>
     <div>
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="let item of itemsList">
+      <li class="list-group-item" *ngFor="let item of itemsList2">
         <input type="radio" [(ngModel)]="questionSelected" name="list_name" value="{{item.value}}" (change)="onItemChange(item)" />
         {{item.name}}
       </li>
@@ -22,13 +22,13 @@ import {Q2Service} from '../services/q2.service'
 
 export class Q2Component implements OnInit {
   questionSelected: string;
-  @Input() itemsList: Item[]; 
+  @Input() itemsList2: Item[]; 
 
   constructor(private myInputService:Q2Service) {}
 
   ngOnInit() {
     console.log("constructor");
-    console.log(this.itemsList)
+    console.log(this.itemsList2)
   }
   
   onItemChange(item) {

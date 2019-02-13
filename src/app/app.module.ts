@@ -33,6 +33,9 @@ import {Test3Component} from './test3/test3.component'
     q2GTyearLT25Component,
     q3GTyearLT25Component,
     MainQuestionComponent,
+    Q1Component,
+    Q2Component,
+    Q3Component,
     Test3Component,
     Q1Component
   ],
@@ -41,7 +44,7 @@ import {Test3Component} from './test3/test3.component'
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [MasterService, Q1Service],
+  providers: [MasterService, Q1Service, Q2Service, Q3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
