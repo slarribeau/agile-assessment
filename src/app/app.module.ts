@@ -10,6 +10,8 @@ import {q1GTyearLT25Component} from './questions/q1.gt.year.lt.25.component';
 import {q2GTyearLT25Component} from './questions/q2.gt.year.lt.25.component';
 import {q3GTyearLT25Component} from './questions/q3.gt.year.lt.25.component';
 import {MainQuestionComponent} from './questions/main.component';
+import {Q1Component} from './questions/q1.component';
+
 import {Test3Component} from './test3/test3.component'
 import {MasterService} from './services/master.service'
 import {Q1Service} from './services/q1.service'
@@ -25,7 +27,8 @@ import {Q1Service} from './services/q1.service'
     q2GTyearLT25Component,
     q3GTyearLT25Component,
     MainQuestionComponent,
-    Test3Component
+    Test3Component,
+    Q1Component
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import {MasterService} from '../services/master.service'
 
 import { Item } from './item';
 import { ITEMS } from './mock-data';
+//   <h4>Selected value is {{radioSel.name}}</h4> --
 
 
 @Component({
@@ -11,7 +12,6 @@ import { ITEMS } from './mock-data';
     <p>
       Main Question!
     </p>
-  <h4>Selected value is {{radioSel.name}}</h4>
 
   <div>
     <ul class="list-group">
