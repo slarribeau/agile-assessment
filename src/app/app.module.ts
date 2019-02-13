@@ -11,10 +11,16 @@ import {q2GTyearLT25Component} from './questions/q2.gt.year.lt.25.component';
 import {q3GTyearLT25Component} from './questions/q3.gt.year.lt.25.component';
 import {MainQuestionComponent} from './questions/main.component';
 import {Q1Component} from './questions/q1.component';
+import {Q2Component} from './questions/q2.component';
+import {Q3Component} from './questions/q3.component';
 
-import {Test3Component} from './test3/test3.component'
+
 import {MasterService} from './services/master.service'
 import {Q1Service} from './services/q1.service'
+import {Q2Service} from './services/q2.service'
+import {Q3Service} from './services/q3.service'
+
+import {Test3Component} from './test3/test3.component'
 
 
 @NgModule({
