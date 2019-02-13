@@ -37,7 +37,7 @@ export class MainQuestionComponent implements OnInit {
   radioSelectedString: string;
   itemsList: Item[] = ITEMS;
 
-  @Output() public childEvent = new EventEmitter();
+  //@Output() public childEvent = new EventEmitter();
 
 
   constructor(private myInputService:C2pInputService) {
@@ -56,8 +56,8 @@ export class MainQuestionComponent implements OnInit {
   onItemChange(item) {
     console.log(item)
     this.getSelecteditem();
-    console.log("about to emit from main component to parent")
-    this.childEvent.emit("scott");
+    //console.log("about to emit from main component to parent")
+   // this.childEvent.emit("scott");
     this.myInputService.notifyParent(this.radioSelected);
   }
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Item } from './item';
+import {C2p2InputService} from '../services/c2p2-input.service'
+
 
 
 
@@ -38,11 +40,22 @@ export const ITEMS: Item[] = [
 
 export class q1GTyearLT25Component implements OnInit {
   itemsList: Item[] = ITEMS;
-  constructor() {
+  radioSel: any;
+  radioSelected: string;
+  radioSelectedString: string;
+  constructor(private myInputService:C2p2InputService) {
     this.itemsList = ITEMS;
-   }
+    //Selecting Default Radio item here
+    this.radioSelected = "item_3";
+  }
 
   ngOnInit() {
   }
-
+  // Radio Change Event
+  onItemChange(item) {
+    console.log(item)
+    //console.log("about to emit from main component to parent")
+   // this.childEvent.emit("scott");
+    this.myInputService.notifyParent(this.radioSelected);
+  }
 }

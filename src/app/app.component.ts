@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {C2pInputService} from './services/c2p-input.service'
+import {C2p2InputService} from './services/c2p2-input.service'
+
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { Router } from '@angular/router';
@@ -12,15 +14,22 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'survey';
   levelIndex = "uninit";
-  questionIndex = 0;
+  questionIndex = "uninit";
 //  constructor(private router: Router) {
 
-  constructor(private myInputService:C2pInputService, private router: Router) {
+  constructor(private myInputService:C2pInputService, 
+              private myInputService2:C2p2InputService, 
+              private router: Router) {
     myInputService.child$.subscribe(
       event => {
         console.log("parent just got: " + event);
         this.levelIndex=event;
       });
+      myInputService2.child$.subscribe(
+        event => {
+          console.log("parent2 just got: " + event);
+          this.questionIndex=event;
+        });
   }
   prevButton() {alert(this.router.url)}
   nextButton() {
