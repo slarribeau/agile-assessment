@@ -29,7 +29,7 @@ export const ITEMS: Item[] = [
     <div>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let item of itemsList">
-        <input type="radio" [(ngModel)]="radioSelected" name="list_name" value="{{item.value}}" (change)="onItemChange(item)" />
+        <input type="radio" [(ngModel)]="questionSelected" name="list_name" value="{{item.value}}" (change)="onItemChange(item)" />
         {{item.name}}
       </li>
     </ul>
@@ -40,13 +40,11 @@ export const ITEMS: Item[] = [
 
 export class q1GTyearLT25Component implements OnInit {
   itemsList: Item[] = ITEMS;
-  radioSel: any;
-  radioSelected: string;
-  radioSelectedString: string;
+  questionSelected: string;
   constructor(private myInputService:Q1Service) {
     this.itemsList = ITEMS;
     //Selecting Default Radio item here
-    this.radioSelected = "item_3";
+    //this.questionSelected = "item_3";
   }
 
   ngOnInit() {
@@ -54,8 +52,6 @@ export class q1GTyearLT25Component implements OnInit {
   // Radio Change Event
   onItemChange(item) {
     console.log(item)
-    //console.log("about to emit from main component to parent")
-   // this.childEvent.emit("scott");
-    this.myInputService.notifyParent(this.radioSelected);
+    this.myInputService.notifyParent(this.questionSelected);
   }
 }
