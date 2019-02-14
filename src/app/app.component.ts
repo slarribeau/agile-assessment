@@ -17,9 +17,9 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'survey';
   levelIndex = "uninit";
-  questionZeroIndex = "uninit";
   questionOneIndex = "uninit";
   questionTwoIndex = "uninit";
+  questionThreeIndex = "uninit";
 
 //  constructor(private router: Router) {
 
@@ -36,17 +36,17 @@ export class AppComponent {
       myInputService1.child$.subscribe(
         event => {
           console.log("parent2 just got: " + event);
-          this.questionZeroIndex=event;
+          this.questionOneIndex=event;
         });
       myInputService2.child$.subscribe(
           event => {
             console.log("parent2 just got: " + event);
-            this.questionOneIndex=event;
+            this.questionTwoIndex=event;
           });
       myInputService3.child$.subscribe(
             event => {
               console.log("parent3 just got: " + event);
-              this.questionTwoIndex=event;
+              this.questionThreeIndex=event;
             });  
   }
   prevButton() {alert(this.router.url)}

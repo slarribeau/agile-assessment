@@ -17,15 +17,15 @@ export class q2LTyearLT25Component implements OnInit {
      this.ITEMS = [
       {
           name:'2222Are you a BORG?',
-          value:'R0'
-      },
-      {
-          name:'2222Dominoes?',
           value:'R1'
       },
       {
-          name:'2222Chinese Food!',
+          name:'2222Dominoes?',
           value:'R2'
+      },
+      {
+          name:'2222Chinese Food!',
+          value:'R3'
       },
     ];
   }
