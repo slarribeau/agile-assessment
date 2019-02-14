@@ -20,9 +20,6 @@ import {Q1Service} from './services/q1.service'
 import {Q2Service} from './services/q2.service'
 import {Q3Service} from './services/q3.service'
 
-import {Test3Component} from './test3/test3.component'
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,9 +32,7 @@ import {Test3Component} from './test3/test3.component'
     MainQuestionComponent,
     Q1Component,
     Q2Component,
-    Q3Component,
-    Test3Component,
-    Q1Component
+    Q3Component
   ],
   imports: [
     BrowserModule,
