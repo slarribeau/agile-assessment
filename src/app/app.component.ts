@@ -51,6 +51,7 @@ export class AppComponent {
   }
   prevButton() {alert(this.router.url)}
   nextButton() {
+    let x:string;
     if (this.router.url == "/") {
       if (this.levelIndex == "lt.year.lt.25") {
         this.router.navigateByUrl("/q1ltyearlt25");
@@ -65,6 +66,18 @@ export class AppComponent {
       this.router.navigateByUrl("/q2gtyearlt25");
     } else if (this.router.url == "/q2gtyearlt25") {
       this.router.navigateByUrl("/q3gtyearlt25");
+    } else if (this.router.url == "/q3gtyearlt25") {
+      x="/answer/"+this.levelIndex+"/"
+                  +this.questionOneIndex+"/"
+                  +this.questionTwoIndex+"/"
+                  +this.questionThreeIndex
+      this.router.navigateByUrl(x);
+    } else if (this.router.url == "/q3ltyearlt25") {
+      x="/answer/"+this.levelIndex+"/"
+                  +this.questionOneIndex+"/"
+                  +this.questionTwoIndex+"/"
+                  +this.questionThreeIndex
+      this.router.navigateByUrl(x);
     }
   }
 }

@@ -13,7 +13,7 @@ import {MainQuestionComponent} from './questions/main.component';
 import {Q1Component} from './questions/q1.component';
 import {Q2Component} from './questions/q2.component';
 import {Q3Component} from './questions/q3.component';
-
+import {AnswerComponent} from './answer.component';
 
 import {MasterService} from './services/master.service'
 import {Q1Service} from './services/q1.service'
@@ -32,7 +32,8 @@ import {Q3Service} from './services/q3.service'
     MainQuestionComponent,
     Q1Component,
     Q2Component,
-    Q3Component
+    Q3Component,
+    AnswerComponent
   ],
   imports: [
     BrowserModule,
