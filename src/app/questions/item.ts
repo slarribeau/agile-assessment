@@ -17,3 +17,8 @@ export class Answer{
     totalPoints:number;
     questions:Question[];
   }
+
+  export class Item{
+    name:string;
+    value:string;
+  }
