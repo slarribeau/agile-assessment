@@ -1,35 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { Answer } from './item';
-import {Q2Service} from '../services/q2.service'
-import {Q2Component} from './q2.component'
+import {Component, OnInit} from '@angular/core';
+import {QuestionSet} from './item';
+import {QuestionDBService} from '../services/questionDB.service'
 
 @Component({
   selector: 'app-q2LTyearLT25',
   template: `
-    <app-q2 [itemsList2]=answer></app-q2>
+  <app-q1 [itemsList1]=myQuestionSet [qIndex]=1></app-q1>
   `,
   styles: []
 })
 
 export class q2LTyearLT25Component implements OnInit {
-  answer: Answer[]
-  constructor(){
-     this.answer = [
-      {
-          name:'2222Are you a BORG?',
-          value:'R1'
-      },
-      {
-          name:'2222Dominoes?',
-          value:'R2'
-      },
-      {
-          name:'2222Chinese Food!',
-          value:'R3'
-      },
-    ];
+  myQuestionSet: QuestionSet;
+  constructor(private myQuestionDBService:QuestionDBService) {
+
+    this.myQuestionSet=myQuestionDBService.getQuestionSet("GTyearLT25");
   }
   ngOnInit() {
-    console.log(this.answer)
+    console.log(this.myQuestionSet)
   }
 }

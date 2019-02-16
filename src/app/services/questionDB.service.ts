@@ -68,15 +68,15 @@ export class QuestionDBService {
           correctAnswer:'R3',
           answers: [
             {
-              name:'???Are you a BORG?',
+              name:'???----Are you a BORG?',
               value:'R1'
             },
             {
-                name:'???Dominoes?',
+                name:'???----Dominoes?',
                 value:'R2'
             },
             {
-                name:'???Chinese Food!',
+                name:'???----Chinese Food!',
                 value:'R3'
             }
           ],

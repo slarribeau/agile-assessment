@@ -11,8 +11,6 @@ import {q2GTyearLT25Component} from './questions/q2.gt.year.lt.25.component';
 import {q3GTyearLT25Component} from './questions/q3.gt.year.lt.25.component';
 import {MainQuestionComponent} from './questions/main.component';
 import {Q1Component} from './questions/q1.component';
-import {Q2Component} from './questions/q2.component';
-import {Q3Component} from './questions/q3.component';
 import {AnswerComponent} from './answer.component';
 
 import {MasterService} from './services/master.service'
@@ -32,8 +30,6 @@ import {QuestionDBService} from './services/questionDB.service'
     q3GTyearLT25Component,
     MainQuestionComponent,
     Q1Component,
-    Q2Component,
-    Q3Component,
     AnswerComponent
   ],
   imports: [

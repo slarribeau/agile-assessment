@@ -1,33 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { Answer } from './item';
-import {Q3Service} from '../services/q3.service'
-import {Q3Component} from './q3.component'
+import {QuestionSet } from './item';
+import {QuestionDBService} from '../services/questionDB.service'
+
 @Component({
   selector: 'app-q3GTyearLT25',
   template: `
-    <app-q3 [itemsList3]=answer></app-q3>
+  <app-q1 [itemsList1]=myQuestionSet [qIndex]=2></app-q1>
   `,
   styles: []
 })
 export class q3GTyearLT25Component implements OnInit {
-  answer: Answer[]
-  constructor(){
-     this.answer = [
-      {
-          name:'3333Are you a BORG?',
-          value:'R1'
-      },
-      {
-          name:'3333Dominoes?',
-          value:'R2'
-      },
-      {
-          name:'3333Chinese Food!',
-          value:'R3'
-      },
-    ];
+  myQuestionSet: QuestionSet;
+  constructor(private myQuestionDBService:QuestionDBService) {
+
+    this.myQuestionSet=myQuestionDBService.getQuestionSet("GTyearLT25");
   }
   ngOnInit() {
-    console.log(this.answer)
+    console.log(this.myQuestionSet)
   }
 }
