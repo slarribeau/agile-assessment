@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Answer } from './item';
+import { QuestionSet } from './item';
 import {Q1Service} from '../services/q1.service'
 
 @Component({
@@ -10,7 +10,7 @@ import {Q1Service} from '../services/q1.service'
     </p>
     <div>
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="let item of itemsList1">
+      <li class="list-group-item" *ngFor="let item of itemsList1.questions[0].answers">
         <input type="radio" [(ngModel)]="questionSelected" name="list_name" value="{{item.value}}" (change)="onItemChange(item)" />
         {{item.name}}
       </li>
@@ -22,13 +22,15 @@ import {Q1Service} from '../services/q1.service'
 
 export class Q1Component implements OnInit {
   questionSelected: string;
-  @Input() itemsList1: Answer[]; 
+  @Input() itemsList1: QuestionSet; 
 
   constructor(private myInputService:Q1Service) {}
 
   ngOnInit() {
-    console.log("constructor");
+    console.log("q1.componeent:itemList1:");
     console.log(this.itemsList1)
+    console.log(this.itemsList1.questions[0].answers)
+
   }
   
   onItemChange(item) {

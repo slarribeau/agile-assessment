@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Answer, Question, QuestionSet } from './item';
+import { QuestionSet } from './item';
 import {QuestionDBService} from '../services/questionDB.service'
-import {Q1Component} from './q1.component'
+//import {Q1Component} from './q1.component'
 
 @Component({
   selector: 'app-q1LTyearLT25',
   template: `
-  <app-q1 [itemsList1]=myQuestionSet.questions[0].answers></app-q1>
+  <app-q1 [itemsList1]=myQuestionSet></app-q1>
   `,
   styles: []
 })
