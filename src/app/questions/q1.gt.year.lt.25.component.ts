@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Item, Question, QuestionSet } from './item';
+import { Answer, Question, QuestionSet } from './item';
 import {Q1Service} from '../services/q1.service'
 import {Q1Component} from './q1.component'
 
@@ -7,7 +7,7 @@ import {Q1Component} from './q1.component'
 @Component({
   selector: 'app-q1GTyearLT25',
   template: `
-    <app-q1 [itemsList1]=myQuestionSet.questions[0].ITEMS></app-q1>
+    <app-q1 [itemsList1]=myQuestionSet.questions[0].answers></app-q1>
   `,
   styles: []
 })
@@ -29,8 +29,8 @@ export class q1GTyearLT25Component implements OnInit {
           passText:'yeah',
           failText:'dude!',
           points:15,
-          answer:'R3',
-          ITEMS: [
+          correctAnswer:'R3',
+          answers: [
             {
               name:'1-You dont care about a',
               value:'R1'
@@ -50,8 +50,8 @@ export class q1GTyearLT25Component implements OnInit {
           passText:'yeah',
           failText:'dude!',
           points:15,
-          answer:'R3',
-          ITEMS: [
+          correctAnswer:'R3',
+          answers: [
             {
               name:'???Are you a BORG?',
               value:'R1'
@@ -71,8 +71,8 @@ export class q1GTyearLT25Component implements OnInit {
           passText:'yeah',
           failText:'dude!',
           points:15,
-          answer:'R3',
-          ITEMS: [
+          correctAnswer:'R3',
+          answers: [
             {
               name:'???Are you a BORG?',
               value:'R1'

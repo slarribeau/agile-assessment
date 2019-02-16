@@ -1,4 +1,4 @@
-export class Item{
+export class Answer{
     name:string;
     value:string;
   }
@@ -7,8 +7,8 @@ export class Item{
     passText:string;
     failText:string;
     points:number;
-    answer:string;
-    ITEMS: Item[];
+    correctAnswer:string;
+    answers: Answer[];
   }
   export class QuestionSet {
     level:string;

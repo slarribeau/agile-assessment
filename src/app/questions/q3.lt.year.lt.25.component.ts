@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { Item } from './item';
+import { Answer } from './item';
 import {Q3Service} from '../services/q3.service'
 import {Q3Component} from './q3.component'
 
 @Component({
   selector: 'app-q2LTyearLT25',
   template: `
-  <app-q3 [itemsList3]=ITEMS></app-q3>
+  <app-q3 [itemsList3]=answer></app-q3>
   `,
   styles: []
 })
 export class q3LTyearLT25Component implements OnInit {
-  ITEMS: Item[]
+  answer: Answer[]
   constructor(){
-     this.ITEMS = [
+     this.answer = [
       {
           name:'3333Are you a BORG?CCCC',
           value:'R1'
@@ -29,6 +29,6 @@ export class q3LTyearLT25Component implements OnInit {
     ];
   }
   ngOnInit() {
-    console.log(this.ITEMS)
+    console.log(this.answer)
   }
 }
