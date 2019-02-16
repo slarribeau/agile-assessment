@@ -8,8 +8,10 @@ import {ActivatedRoute, Router, Route, ParamMap} from '@angular/router';
   template: `
     <p>
       Calculating the answers!
-      {{foobar}}
-    </p>
+      </p>
+
+      <h2>{{foobar}}</h2>
+      <h2>{{foobar2}}</h2>
   `,
   styles: []
 })
@@ -19,6 +21,8 @@ export class AnswerComponent implements OnInit {
   @Input() answerTwo: string; 
   @Input() answerThree: string; 
   foobar:string;
+  foobar2:string;
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -28,7 +32,7 @@ export class AnswerComponent implements OnInit {
       this.answerTwo = params.get('answerTwo');
       this.answerThree = params.get('answerThree');
       this.foobar = "you really should hire an agile coach to help you out"
-      console.log(this.level+this.answerOne+this.answerTwo+this.answerThree)
+      this.foobar2 = this.level+this.answerOne+this.answerTwo+this.answerThree;
     });
 
   }
