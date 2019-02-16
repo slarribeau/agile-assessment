@@ -1,43 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-//import { Item } from './item';
+import { Item, Question, QuestionSet } from './item';
 import {Q1Service} from '../services/q1.service'
 import {Q1Component} from './q1.component'
 
 
-
-export class Item{
-  name:string;
-  value:string;
-}
-export class Question {
-  question:string;
-  passText:string;
-  failText:string;
-  points:number;
-  answer:string;
-  ITEMS: Item[];
-}
-export class test {
-  level:string;
-  passText:string;
-  failText:string;
-  totalPoints:number;
-  questions:Question[];
-}
 @Component({
   selector: 'app-q1GTyearLT25',
   template: `
-    <app-q1 [itemsList1]=myTEST.questions[0].ITEMS></app-q1>
+    <app-q1 [itemsList1]=myQuestionSet.questions[0].ITEMS></app-q1>
   `,
   styles: []
 })
 
 export class q1GTyearLT25Component implements OnInit {
-  //ITEMS: Item[]
-  myTEST: test;
+  myQuestionSet: QuestionSet;
   constructor(){
   
-    this.myTEST=
+    this.myQuestionSet=
     {
       level: "gt.year.lt.25",
       passText:"You pretty much rock -- not sure we can help",
@@ -112,6 +91,6 @@ export class q1GTyearLT25Component implements OnInit {
     }
   }
   ngOnInit() {
-    console.log(this.myTEST)
+    console.log(this.myQuestionSet)
   }
 }

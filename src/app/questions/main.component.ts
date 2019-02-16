@@ -1,7 +1,11 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {MasterService} from '../services/master.service'
 
-import { Item } from './item';
+//import { Item } from './item';
+export class Item{
+  name:string;
+  value:string;
+}
 import { ITEMS } from './mock-data';
 //   <h4>Selected value is {{radioSel.name}}</h4> --
 
