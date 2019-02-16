@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Item } from './item';
+import { Answer } from './item';
 import {Q1Service} from '../services/q1.service'
 
 @Component({
@@ -22,7 +22,7 @@ import {Q1Service} from '../services/q1.service'
 
 export class Q1Component implements OnInit {
   questionSelected: string;
-  @Input() itemsList1: Item[]; 
+  @Input() itemsList1: Answer[]; 
 
   constructor(private myInputService:Q1Service) {}
 

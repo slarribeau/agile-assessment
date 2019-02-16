@@ -19,6 +19,7 @@ import {MasterService} from './services/master.service'
 import {Q1Service} from './services/q1.service'
 import {Q2Service} from './services/q2.service'
 import {Q3Service} from './services/q3.service'
+import {QuestionDBService} from './services/questionDB.service'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import {Q3Service} from './services/q3.service'
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [MasterService, Q1Service, Q2Service, Q3Service],
+  providers: [MasterService, Q1Service, Q2Service, Q3Service,QuestionDBService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
