@@ -6,9 +6,7 @@ import {QuestionDBService} from '../services/questionDB.service';
   selector: 'app-q1GTyearLT25',
   template: `
     <app-q1 
-       [itemsList1]=myQuestionSet
-       [questionIndex]=myQuestionIndex
-    >
+       [itemsList1]=myQuestionSet [qIndex]=0>
     </app-q1>
   `,
   styles: []
