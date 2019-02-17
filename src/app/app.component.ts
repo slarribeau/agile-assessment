@@ -115,4 +115,5 @@ export class AppComponent {
                   +this.questionThreeIndex
       this.router.navigateByUrl(x);
     }
+  }
 }

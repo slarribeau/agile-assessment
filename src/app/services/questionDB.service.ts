@@ -10,7 +10,7 @@ export class QuestionDBService {
     }
 
     if (level=="GTyearLT25") {
-      return this.q1;
+      return this.q2;
     }
 
     if (level=="LTyearGT25") {
@@ -132,85 +132,92 @@ export class QuestionDBService {
       questions:
       [
         {
-          question:'Do your user stories deliver functionality in \'vertically sliced\' increments?',
+          question:'How much formal Agile training has your team received?',
           passText:'yeah',
           failText:'dude!',
           points:15,
           correctAnswer:'2',
           answers: [
             {
-              name:'The product that we deliver does not lend itself to delivering vertical slices.',
+              name:'None',
               value:'0'
             },
             {
-              name:'I\'m not quite sure what a vertical slice is.',
+              name:'The Product Owners and Scrum Masters received formal training, but not the Developers and Stakeholders.',
               value:'1'
             },
             {
-              name:'We usually deliver vertical slices.',
+              name:'The Product Owners, Scrum Masters and Developers received training, but not the Stakeholders.',
+
               value:'2'
             },
             {
-              name:'We sometimes deliver vertical slices.',
+              name:'The Product Owners, Scrum Masters, Developers received training, but not the Stakeholders.',
               value:'3'
             },
             {
-              name:'The structure of our organization does not allow us to deliver vertical slices.',
+              name:'The Product Owners, Scrum Masters, Developers and Stakeholders all received formal Agile training.',
               value:'4'
             },
           ],
         },
         {
-          question:'How long is delay between development and formal testing of a feature? ',
+          question:'Are your Scrum teams cross-functional?',
           passText:'yeah',
           failText:'dude!',
           points:15,
           correctAnswer:'0',
           answers: [
             {
-              name:'None -- We either have developers test their own code or formal testing starts the day the feature is completed.',
+              name:'A significant portion of what is needed to get the stories to done exists outside of the team.',
               value:'0'
             },
             {
-              name:'We deploy quarterly. A feature that is complete on Jan 15 may not get tested until end of March.',
+              name:'Some of the skills necessary to get the stories to done exists outside of the team.',
+
               value:'1'
             },
             {
-              name:'Not more than 2 weeks.',
+              name:'All of the necessary skills for performing the work exist on the team.',
               value:'2'
             },
             {
-              name:'Not more than 8 weeks.',
+              name:'All of the necessary skills for performing the work exist on the team and there is some cross training of skills.',
               value:'3'
             },
             {
-              name:'Not more than 4 weeks.',
+              name:'All of the necessary skills for performing the work exist on the team and most of the team is cross trained on most of those skills.',
               value:'4'
             }
           ],
         },
         {
-          question:'How many days are spent coding a typical user story?',
+          question:'How much time are Scrum team members spending on their Scrum team assignments?',
           passText:'yeah',
           failText:'dude!',
           points:15,
           correctAnswer:'1',
           answers: [
             {
-              name:'There is a wide variance. Some can be coded in one day and some take more than four weeks',
+              name:'Its all over the map. Some sprints its 100% and some sprints team members are completely un-available',
+
               value:'0'
             },
             {
-                name:'Most stories can be coded in 1-3 days.',
+                name:'Less than 1/4 of their time.',
                 value:'1'
             },
             {
-                name:'Coding a story rarely exceeds one week',
+                name:'1/4 to 1/2 of their time.',
                 value:'2'
             },
             {
-              name:'Coding a story rarely exceeds two weeks',
+              name:'1/2 to 3/4 of their time.',
               value:'3'
+            },
+            {
+              name:'3/4 of their time or more.',
+              value:'4'
             }
           ],
         }
