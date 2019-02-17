@@ -1,20 +1,20 @@
-import {Component, OnInit} from '@angular/core';
-import {QuestionSet} from './item';
+import {Component, OnInit } from '@angular/core';
+import {QuestionSet } from './item';
 import {QuestionDBService} from '../services/questionDB.service'
 
 @Component({
-  selector: 'app-q2LTyearLT25',
+  selector: 'app-q2GTyearGT25',
   template: `
   <app-q1 [itemsList1]=myQuestionSet [qIndex]=1></app-q1>
   `,
   styles: []
 })
 
-export class q2LTyearLT25Component implements OnInit {
+export class q2GTyearGT25Component implements OnInit {
   myQuestionSet: QuestionSet;
   constructor(private myQuestionDBService:QuestionDBService) {
 
-    this.myQuestionSet=myQuestionDBService.getQuestionSet("LTyearLT25");
+    this.myQuestionSet=myQuestionDBService.getQuestionSet("GTyearGT25");
   }
   ngOnInit() {
     console.log(this.myQuestionSet)

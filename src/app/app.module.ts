@@ -9,6 +9,14 @@ import {q3LTyearLT25Component} from './questions/q3.lt.year.lt.25.component';
 import {q1GTyearLT25Component} from './questions/q1.gt.year.lt.25.component';
 import {q2GTyearLT25Component} from './questions/q2.gt.year.lt.25.component';
 import {q3GTyearLT25Component} from './questions/q3.gt.year.lt.25.component';
+
+import {q1LTyearGT25Component} from './questions/q1.lt.year.gt.25.component';
+import {q2LTyearGT25Component} from './questions/q2.lt.year.gt.25.component';
+import {q3LTyearGT25Component} from './questions/q3.lt.year.gt.25.component';
+import {q1GTyearGT25Component} from './questions/q1.gt.year.gt.25.component';
+import {q2GTyearGT25Component} from './questions/q2.gt.year.gt.25.component';
+import {q3GTyearGT25Component} from './questions/q3.gt.year.gt.25.component';
+
 import {MainQuestionComponent} from './questions/main.component';
 import {Q1Component} from './questions/q1.component';
 import {AnswerComponent} from './answer.component';
@@ -29,6 +37,15 @@ import {QuestionDBService} from './services/questionDB.service'
     q2GTyearLT25Component,
     q3GTyearLT25Component,
     MainQuestionComponent,
+
+    q1LTyearGT25Component,
+    q2LTyearGT25Component,
+    q3LTyearGT25Component,
+    q1GTyearGT25Component,
+    q2GTyearGT25Component,
+    q3GTyearGT25Component,
+    MainQuestionComponent,
+
     Q1Component,
     AnswerComponent
   ],

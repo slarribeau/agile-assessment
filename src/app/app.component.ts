@@ -55,17 +55,39 @@ export class AppComponent {
     if (this.router.url == "/") {
       if (this.levelIndex == "lt.year.lt.25") {
         this.router.navigateByUrl("/q1ltyearlt25");
-      } else {
+      } else if (this.levelIndex == "gt.year.lt.25") {  
         this.router.navigateByUrl("/q1gtyearlt25");
+      } else if (this.levelIndex == "lt.year.gt.25") {    
+        this.router.navigateByUrl("/q1ltyeargt25");
+      } else {
+        this.router.navigateByUrl("/q1gtyeargt25");
       }
+
     } else if (this.router.url == "/q1ltyearlt25") {
       this.router.navigateByUrl("/q2ltyearlt25");
     } else if (this.router.url == "/q2ltyearlt25") {
       this.router.navigateByUrl("/q3ltyearlt25");
+
     } else if (this.router.url == "/q1gtyearlt25") {
       this.router.navigateByUrl("/q2gtyearlt25");
     } else if (this.router.url == "/q2gtyearlt25") {
       this.router.navigateByUrl("/q3gtyearlt25");
+
+    } else if (this.router.url == "/q1ltyeargt25") {
+      this.router.navigateByUrl("/q2ltyeargt25");
+    } else if (this.router.url == "/q2ltyeargt25") {
+      this.router.navigateByUrl("/q3ltyeargt25");
+
+    } else if (this.router.url == "/q1gtyeargt25") {
+      this.router.navigateByUrl("/q2gtyeargt25");
+    } else if (this.router.url == "/q2gtyeargt25") {
+      this.router.navigateByUrl("/q3gtyeargt25");      
+
+
+
+
+
+
     } else if (this.router.url == "/q3gtyearlt25") {
       x="/answer/"+this.levelIndex+"/"
                   +this.questionOneIndex+"/"
@@ -78,6 +100,19 @@ export class AppComponent {
                   +this.questionTwoIndex+"/"
                   +this.questionThreeIndex
       this.router.navigateByUrl(x);
+    
+
+    } else if (this.router.url == "/q3gtyeargt25") {
+      x="/answer/"+this.levelIndex+"/"
+                  +this.questionOneIndex+"/"
+                  +this.questionTwoIndex+"/"
+                  +this.questionThreeIndex
+      this.router.navigateByUrl(x);
+    } else if (this.router.url == "/q3ltyeargt25") {
+      x="/answer/"+this.levelIndex+"/"
+                  +this.questionOneIndex+"/"
+                  +this.questionTwoIndex+"/"
+                  +this.questionThreeIndex
+      this.router.navigateByUrl(x);
     }
-  }
 }
