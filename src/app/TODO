@@ -8,3 +8,12 @@
 8) Questions are kind of klunky.
 9) Deduplicate questions.
 
+ng build --verbose --prod --base-href /agile-assessment/ --deploy-url /agile-assessment/
+tar -cvf ~/output444.tar -C ../../dist/survey/ .
+scp -r -i /Users/scottlarribeau/.ssh/gce ~/output444.tar slarribeau@35.197.78.56:/home/slarribeau
+ssh -i ~/.ssh/gce 35.197.78.56 -l slarribeau
+  rm -i /var/www/html/agile-assessment/*
+  tar -xvf output444.tar -C /var/www/html/agile-assessment
+  sudo systemctl restart nginx
+
+
