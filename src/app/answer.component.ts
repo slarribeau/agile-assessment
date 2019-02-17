@@ -10,8 +10,11 @@ import {QuestionSet } from './questions/item';
       Calculating the answers!
       </p>
 
-      <h2>{{foobar}}</h2>
-      <h2>{{foobar2}}</h2>
+      <h2>{{line1}}</h2>
+      <h2>{{line2}}</h2>
+      <h2>{{line3}}</h2>
+      <h2>{{line4}}</h2>
+
   `,
   styles: []
 })
@@ -20,8 +23,10 @@ export class AnswerComponent implements OnInit {
   @Input() answerOne: string; 
   @Input() answerTwo: string; 
   @Input() answerThree: string; 
-  foobar:string;
-  foobar2:string;
+  line1:string;
+  line2:string;
+  line3:string;
+  line4:string;
   myQuestionSet: QuestionSet;
 
   constructor(private myQuestionDBService:QuestionDBService, private route: ActivatedRoute) {
@@ -33,18 +38,24 @@ export class AnswerComponent implements OnInit {
       this.answerOne = params.get('answerOne');
       this.answerTwo = params.get('answerTwo');
       this.answerThree = params.get('answerThree');
-      this.foobar = "";
-      this.foobar2 = this.level+this.answerOne+this.answerTwo+this.answerThree;
+      this.line1 = "";
+      this.line2 = this.level+this.answerOne+this.answerTwo+this.answerThree;
     });
 
     if (this.answerOne == this.myQuestionSet.questions[0].correctAnswer) {
       if (this.answerTwo == this.myQuestionSet.questions[1].correctAnswer) {
         if (this.answerThree == this.myQuestionSet.questions[2].correctAnswer) {
-          this.foobar=("got it right")
+          this.line1=("got it right")
           return;
         }
       }
     }
-    this.foobar = "you really should hire an agile coach to help you out"
+    if (this.answerOne != this.myQuestionSet.questions[0].correctAnswer) {
+      this.line1="Question 1: " + this.myQuestionSet.questions[0].question;
+      this.line2="Correct Answer: " + this.myQuestionSet.questions[0].answers[0].name;
+
+    }
+
+    this.line3 = "you really should hire an agile coach to help you out"
   }
 }
