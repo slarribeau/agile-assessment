@@ -14,7 +14,7 @@ import { ITEMS } from './mock-data';
   selector: 'app-main-question',
   template: `
     <p>
-      Main Question!
+    Click the button below which best describes your company:
     </p>
 
   <div>

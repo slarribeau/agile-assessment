@@ -1,13 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1> Welcome to {{ title }}! </h1>
-    <h1>Current level is {{levelIndex}}</h1>
-    <h1>question 1 Answer is {{questionOneIndex}}</h1>
-    <h1>question 2 Answer  is {{questionTwoIndex}}</h1>
-    <h1>question 3 Answer  is {{questionThreeIndex}}</h1>
+  <h1>Current level is {{levelIndex}}</h1>
+  <h1>question 1 Answer is {{questionOneIndex}}</h1>
+  <h1>question 2 Answer  is {{questionTwoIndex}}</h1>
+  <h1>question 3 Answer  is {{questionThreeIndex}}</h1>
 
-<h2>Here are some links to help you start: </h2>
-<ul>
+  <h2>Here are some links to help you start: </h2>
+  <ul>
   <li>
     <h2><a target="_blank" rel="noopener" href="/main">Main Routing Question</a></h2>
   </li>
@@ -20,10 +20,12 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="/q3/">Small Begginer #3</a></h2>
   </li>
-</ul>
+  </ul>
+</div>
 <router-outlet></router-outlet> 
-<button   (click)="prevButton()" >prev</button>
-<button   (click)="nextButton()" >next</button>
-
+<div style="text-align:center">
+    <button   (click)="prevButton()" >prev</button>
+    <button   (click)="nextButton()" >next</button>
+</div>
 
 
