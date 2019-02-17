@@ -1,3 +1,10 @@
 1) Prev button
 2) Make radio mandatory
 3) make it purty
+4) Need a "submit" button
+5) No "prev" button on first screen
+6) NO "next" button when looking at results
+7) Answer component is worse than primitive -- need lots of polish
+8) Questions are kind of klunky.
+9) Deduplicate questions.
+

@@ -9,11 +9,11 @@ export class QuestionDBService {
       return this.q1;
     }
 
-    if (level=="GTyearLT25") {
+    if (level=="LTyearGT25") {
       return this.q2;
     }
 
-    if (level=="LTyearGT25") {
+    if (level=="GTyearLT25") {
       return this.q3;
     }
 
@@ -125,7 +125,7 @@ export class QuestionDBService {
 
     this.q2=
     {
-      level: 'gt.year.lt.25',
+      level: 'lt.year.gt.25',
       passText:'You pretty much rock -- not sure we can help',
       failText:'You so need us!',
       totalPoints:45,
@@ -136,7 +136,7 @@ export class QuestionDBService {
           passText:'yeah',
           failText:'dude!',
           points:15,
-          correctAnswer:'2',
+          correctAnswer:'4',
           answers: [
             {
               name:'None',
@@ -166,7 +166,7 @@ export class QuestionDBService {
           passText:'yeah',
           failText:'dude!',
           points:15,
-          correctAnswer:'0',
+          correctAnswer:'4',
           answers: [
             {
               name:'A significant portion of what is needed to get the stories to done exists outside of the team.',
@@ -226,91 +226,87 @@ export class QuestionDBService {
 
     this.q3=
     {
-      level: 'lt.year.gt.25',
+      level: 'gt.year.lt.25',
       passText:'You pretty much rock -- not sure we can help',
       failText:'You so need us!',
       totalPoints:45,
       questions:
       [
         {
-          question:'Do your user stories deliver functionality in \'vertically sliced\' increments?',
+          question:'How often do you deploy software?',
           passText:'yeah',
           failText:'dude!',
           points:15,
           correctAnswer:'2',
           answers: [
             {
-              name:'The product that we deliver does not lend itself to delivering vertical slices.',
+              name:'We have the infrastructure in place where we could deploy quarterly.',
               value:'0'
             },
             {
-              name:'I\'m not quite sure what a vertical slice is.',
+              name:'We have the infrastructure in place where we could deploy weekly',
               value:'1'
             },
             {
-              name:'We usually deliver vertical slices.',
+              name:'We have the infrastructure in place where we could deploy daily.',
               value:'2'
             },
             {
-              name:'We sometimes deliver vertical slices.',
+              name:'We have the infrastructure in place where we could deploy multiple times a day.',
               value:'3'
-            },
-            {
-              name:'The structure of our organization does not allow us to deliver vertical slices.',
-              value:'4'
-            },
+            }
           ],
         },
         {
-          question:'How long is delay between development and formal testing of a feature? ',
+          question:'We use Test Driven Development (TDD) in the following manner:',
           passText:'yeah',
           failText:'dude!',
           points:15,
-          correctAnswer:'0',
+          correctAnswer:'4',
           answers: [
             {
-              name:'None -- We either have developers test their own code or formal testing starts the day the feature is completed.',
+              name:'What\'s TDD?',
               value:'0'
             },
             {
-              name:'We deploy quarterly. A feature that is complete on Jan 15 may not get tested until end of March.',
+              name:'Have heard of it most of us don\'t use it.',
               value:'1'
             },
             {
-              name:'Not more than 2 weeks.',
+              name:'About half of our developers use it.',
               value:'2'
             },
             {
-              name:'Not more than 8 weeks.',
+              name:'Its expected that all of our developers use TDD.',
               value:'3'
             },
             {
-              name:'Not more than 4 weeks.',
+              name:'Its expected that all of our developers use TDD. Most use mocks and stubs as well.',
               value:'4'
             }
           ],
         },
         {
-          question:'How many days are spent coding a typical user story?',
+          question:'The most recent problem that we identified in a sprint retrospective and solved was \'__________\':',
           passText:'yeah',
           failText:'dude!',
           points:15,
-          correctAnswer:'1',
+          correctAnswer:'3',
           answers: [
             {
-              name:'There is a wide variance. Some can be coded in one day and some take more than four weeks',
+              name:'Never. We don\'t have sprint retrospectives.',
               value:'0'
             },
             {
-                name:'Most stories can be coded in 1-3 days.',
+                name:'We bring up lots of problems in retrospectives, but I can\'t remember the last one we solved.',
                 value:'1'
             },
             {
-                name:'Coding a story rarely exceeds one week',
+                name:'Two-Three sprints ago.',
                 value:'2'
             },
             {
-              name:'Coding a story rarely exceeds two weeks',
+              name:'Last sprint. We regularly discover new problems in our retrospective and actions are taken to quickly implement proposed solutions.',
               value:'3'
             }
           ],
