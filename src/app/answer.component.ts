@@ -11,7 +11,7 @@ import {QuestionSet } from './questions/item';
       </p>
 
       <h2>{{line1}}</h2>
-      <h2>{{line2}}</h2>
+      <h2 style="color:red">{{line2}}</h2>
       <h2>{{line3}}</h2>
       <h2>{{line4}}</h2>
 
@@ -50,12 +50,15 @@ export class AnswerComponent implements OnInit {
         }
       }
     }
-    if (this.answerOne != this.myQuestionSet.questions[0].correctAnswer) {
+    let correctAnswer = this.myQuestionSet.questions[0].correctAnswer;
+    if (this.answerOne != correctAnswer) {
       this.line1="Question 1: " + this.myQuestionSet.questions[0].question;
-      this.line2="Correct Answer: " + this.myQuestionSet.questions[0].answers[0].name;
+      let wrongAnswer = parseInt(this.answerOne)
+      this.line2="Your Incorrect Answer: " + this.myQuestionSet.questions[0].answers[wrongAnswer].name;
+      this.line3="Correct Answer: " + this.myQuestionSet.questions[0].answers[correctAnswer].name
 
     }
 
-    this.line3 = "you really should hire an agile coach to help you out"
+    this.line4 = "you really should hire an agile coach to help you out"
   }
 }
