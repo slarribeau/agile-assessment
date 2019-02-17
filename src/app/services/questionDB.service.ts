@@ -23,27 +23,27 @@ export class QuestionDBService {
           passText:'yeah',
           failText:'dude!',
           points:15,
-          correctAnswer:'A3',
+          correctAnswer:'2',
           answers: [
             {
               name:'The product that we deliver does not lend itself to delivering vertical slices.',
-              value:'A1'
+              value:'0'
             },
             {
               name:"I'm not quite sure what a vertical slice is.",
-              value:'A2'
+              value:'1'
             },
             {
               name:'We usually deliver vertical slices.',
-              value:'A3'
+              value:'2'
             },
             {
               name:"We sometimes deliver vertical slices.",
-              value:'A4'
+              value:'3'
             },
             {
               name:"The structure of our organization does not allow us to deliver vertical slices.",
-              value:'A5'
+              value:'4'
             },
           ],
         },
@@ -52,27 +52,27 @@ export class QuestionDBService {
           passText:'yeah',
           failText:'dude!',
           points:15,
-          correctAnswer:'A1',
+          correctAnswer:'0',
           answers: [
             {
               name:'None -- We either have developers test their own code or formal testing starts the day the feature is completed.',
-              value:'A1'
+              value:'0'
             },
             {
               name:'We deploy quarterly. A feature that is complete on Jan 15 may not get tested until end of March.',
-              value:'A2'
+              value:'1'
             },
             {
               name:'Not more than 2 weeks.',
-              value:'A3'
+              value:'2'
             },
             {
               name:'Not more than 8 weeks.',
-              value:'A4'
+              value:'3'
             },
             {
               name:'Not more than 4 weeks.',
-              value:'A5'
+              value:'4'
             }
           ],
         },
@@ -81,23 +81,23 @@ export class QuestionDBService {
           passText:'yeah',
           failText:'dude!',
           points:15,
-          correctAnswer:'A2',
+          correctAnswer:'1',
           answers: [
             {
               name:'There is a wide variance. Some can be coded in one day and some take more than four weeks',
-              value:'A1'
+              value:'0'
             },
             {
                 name:'Most stories can be coded in 1-3 days.',
-                value:'A2'
+                value:'1'
             },
             {
                 name:'Coding a story rarely exceeds one week',
-                value:'A3'
+                value:'2'
             },
             {
               name:'Coding a story rarely exceeds two weeks',
-              value:'A4'
+              value:'3'
             }
           ],
         }
