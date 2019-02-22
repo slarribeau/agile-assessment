@@ -136,7 +136,7 @@ export class QuestionDBService {
       [
         {
           question:'How much formal Agile training has your team received?',
-          passText:'yeah',
+          passText:this.passText,
           failText:'dude!',
           points:15,
           correctAnswer:'E',
@@ -237,7 +237,7 @@ export class QuestionDBService {
       [
         {
           question:'How often do you deploy software?',
-          passText:'yeah',
+          passText:this.passText,
           failText:'dude!',
           points:15,
           correctAnswer:'C',
