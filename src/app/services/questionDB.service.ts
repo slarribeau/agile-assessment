@@ -41,7 +41,7 @@ export class QuestionDBService {
         {
           question:'Do your user stories deliver functionality in \'vertically sliced\' increments?',
           passText:'yeah',
-          failText:'dude!',
+          failText:'Vertical slices allow you to split up projects into small work increments that the stakeholders (including customers) can see and give feedback on. The slices may not be complete enough for production, but the feedback and transparency are invaluable. <br><br> You get the added benefits of: <br>- Your team becoming autonomous -- You may find that to deliver vertical slices, you have to change the staffing of your scrum team(s) so that you have the necessary skills to change each layer of the stack.<br>- You can turn things around to user quickly and incorporate feedback -- Delivering vertical slice increments within the scrum team reduces inter-team dependencies, which reduces delay.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'2',
           answers: [
@@ -70,7 +70,7 @@ export class QuestionDBService {
         {
           question:'How long is delay between development and formal testing of a feature? ',
           passText:'yeah',
-          failText:'dude!',
+          failText:'There are many benefits to having no gap between testing and development:<br><br>- The logic is fresh in the developers mind<br>- Less likely to have developer context switch between previous and current task<br>-Richer interactions between tester and developer<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'0',
           answers: [
@@ -99,7 +99,7 @@ export class QuestionDBService {
         {
           question:'How many days are spent coding a typical user story?',
           passText:'yeah',
-          failText:'dude!',
+          failText:'There are many benefits to having user stories that can be coded in one-three days:<br><br>- Easier to estimate -- This is because the granularity is smaller. This allows the estimators to think deeper about what it would take to do the actual implementation, raising the quality of the estimate.<br>- Less ambiguity -- Short stories bring clarity since the domain that is being described is smaller. There is a great savings here in time. Ambiguous user stories slow down developer flow as they either have to stop and research the correct answer, or take a chance and take the risk of re-work if the wrong choice was selected.<br>- Easier to test -- Shorter stories do fewer things. Its easier to document input, outputs and expected behavior. There are also fewer test cases with smaller stories, so there is less work for testing.<br>- Feels good when you finish a story shortly after starting it -- Correspondingly, a four week story feels like a long march. It can really build a teams morale to see someone\'s story submitted every day and have testing start on that same day.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'1',
           answers: [

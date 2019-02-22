@@ -24,8 +24,8 @@
             <h4>
                 {{this.myQuestionSet.questions[0].correctAnswer}} is Correct
             </h4>
-            <h4>
-                {{this.myQuestionSet.questions[0].passText}}
+            <h4
+            [innerHTML]="this.myQuestionSet.questions[0].passText">
             </h4>
         </div>  
     </div>
@@ -38,8 +38,8 @@
             <h4>
                 {{this.myQuestionSet.questions[0].correctAnswer}} is Correct
             </h4>
-            <h4>
-                {{this.myQuestionSet.questions[0].failText}}
+            <h4 
+            [innerHTML]="this.myQuestionSet.questions[0].failText">
             </h4>
         </div>        
     </ng-template>
@@ -52,7 +52,7 @@
          <h3>{{this.myQuestionSet.questions[1].question}}
          </h3>
      </div>
-     <div *ngIf="this.answerOne == this.myQuestionSet.questions[1].correctAnswer ; else falsyTemplate1">
+     <div *ngIf="this.answerTwo == this.myQuestionSet.questions[1].correctAnswer ; else falsyTemplate1">
          <div class="inner_box_correct">
              Correct!
          </div>
@@ -60,8 +60,8 @@
              <h4>
                  {{this.myQuestionSet.questions[1].correctAnswer}} is Correct
              </h4>
-             <h4>
-                 {{this.myQuestionSet.questions[1].passText}}
+             <h4
+             [innerHTML]="this.myQuestionSet.questions[1].passText">
              </h4>
          </div>  
      </div>
@@ -74,8 +74,8 @@
              <h4>
                  {{this.myQuestionSet.questions[1].correctAnswer}} is Correct
              </h4>
-             <h4>
-                 {{this.myQuestionSet.questions[1].failText}}
+             <h4 
+             [innerHTML]="this.myQuestionSet.questions[1].failText">
              </h4>
          </div>        
      </ng-template>
@@ -88,7 +88,7 @@
           <h3>{{this.myQuestionSet.questions[2].question}}
           </h3>
       </div>
-      <div *ngIf="this.answerOne == this.myQuestionSet.questions[2].correctAnswer ; else falsyTemplate2">
+      <div *ngIf="this.answerThree == this.myQuestionSet.questions[2].correctAnswer ; else falsyTemplate2">
           <div class="inner_box_correct">
               Correct!
           </div>
@@ -96,8 +96,8 @@
               <h4>
                   {{this.myQuestionSet.questions[2].correctAnswer}} is Correct
               </h4>
-              <h4>
-                  {{this.myQuestionSet.questions[2].passText}}
+              <h4
+              [innerHTML]="this.myQuestionSet.questions[2].passText">
               </h4>
           </div>  
       </div>
@@ -110,8 +110,8 @@
               <h4>
                   {{this.myQuestionSet.questions[2].correctAnswer}} is Correct
               </h4>
-              <h4>
-                  {{this.myQuestionSet.questions[2].failText}}
+              <h4 
+              [innerHTML]="this.myQuestionSet.questions[2].failText">
               </h4>
           </div>        
       </ng-template>
