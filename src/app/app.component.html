@@ -5,10 +5,10 @@
 
     </div>
     <router-outlet></router-outlet> 
-    <div style="text-align:center">
-        <div *ngIf="this.router.url != '/' ">
+    <div style="text-align:right">
+        <span *ngIf="this.router.url != '/' ">
             <button   (click)="prevButton()" >prev</button>
-        </div>
+        </span>
         <button   (click)="nextButton()" >next</button>
     </div>
 </div>
