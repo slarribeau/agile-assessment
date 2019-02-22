@@ -26,7 +26,11 @@
         </div>
     </ng-template>
     <div class="inner_box_framed">
-      <h4>Thanks for taking our quiz! We hope that, no matter how well you did, you picked up a few ideas about how to be more #CyberAware. Learn more about protecting yourself online at NIST NCSAM tip sheets page.
+      <h4>
+            {{this.myQuestionSet.questions[0].correctAnswer}}  is the correct answer.
+       </h4>
+        <h4>
+                {{this.myQuestionSet.questions[0].failText}}
       </h4>
     </div>
  </div>
