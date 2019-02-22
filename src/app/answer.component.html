@@ -43,9 +43,78 @@
     </ng-template>
  </div>
 
+ <h3>Question 2</h3>
 
+ <div class="outer_box">
+     <div class="inner_box_framed">
+         <h3>{{this.myQuestionSet.questions[1].question}}
+         </h3>
+     </div>
+     <div *ngIf="this.answerOne == this.myQuestionSet.questions[1].correctAnswer ; else falsyTemplate1">
+         <div class="inner_box_correct">
+             Correct!
+         </div>
+         <div class="inner_box_framed">
+             <h4>
+                 {{this.myQuestionSet.questions[1].correctAnswer}} is Correct
+             </h4>
+             <h4>
+                 {{this.myQuestionSet.questions[1].passText}}
+             </h4>
+         </div>  
+     </div>
+           
+     <ng-template #falsyTemplate1>
+         <div class="inner_box_incorrect">
+             Incorrect
+         </div>
+         <div class="inner_box_framed">
+             <h4>
+                 {{this.myQuestionSet.questions[1].correctAnswer}} is Correct
+             </h4>
+             <h4>
+                 {{this.myQuestionSet.questions[1].failText}}
+             </h4>
+         </div>        
+     </ng-template>
+  </div>
   
+  <h3>Question 3</h3>
 
+  <div class="outer_box">
+      <div class="inner_box_framed">
+          <h3>{{this.myQuestionSet.questions[2].question}}
+          </h3>
+      </div>
+      <div *ngIf="this.answerOne == this.myQuestionSet.questions[2].correctAnswer ; else falsyTemplate2">
+          <div class="inner_box_correct">
+              Correct!
+          </div>
+          <div class="inner_box_framed">
+              <h4>
+                  {{this.myQuestionSet.questions[2].correctAnswer}} is Correct
+              </h4>
+              <h4>
+                  {{this.myQuestionSet.questions[2].passText}}
+              </h4>
+          </div>  
+      </div>
+            
+      <ng-template #falsyTemplate2>
+          <div class="inner_box_incorrect">
+              Incorrect
+          </div>
+          <div class="inner_box_framed">
+              <h4>
+                  {{this.myQuestionSet.questions[2].correctAnswer}} is Correct
+              </h4>
+              <h4>
+                  {{this.myQuestionSet.questions[2].failText}}
+              </h4>
+          </div>        
+      </ng-template>
+   </div>
+<!--
   <h2>{{line1}}</h2>
   <h2>{{line2}}</h2>
   <h2 style="color:red">{{line3}}</h2>
@@ -60,3 +129,4 @@
   <h2>{{line10}}</h2>
   <h2 style="color:red">{{line11}}</h2>
   <h2>{{line12}}</h2>
+-->
