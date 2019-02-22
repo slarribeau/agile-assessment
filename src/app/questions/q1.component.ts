@@ -8,10 +8,12 @@ import {Q3Service} from '../services/q3.service'
 @Component({
   selector: 'app-q1',
   template: `
-    <p>
-      Q1: {{itemsList1.questions[qIndex].question}}
-    </p>
-    <div>
+  <h2>Question {{qIndex+2}}</h2>
+  <h3>
+  {{itemsList1.questions[qIndex].question}}
+  </h3>
+  <div class="question_box">
+    <h3> Choose One</h3>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let item of itemsList1.questions[qIndex].answers">
         <input type="radio" [(ngModel)]="questionSelected" name="list_name" value="{{item.value}}" (change)="onItemChange(item)" />
@@ -20,7 +22,7 @@ import {Q3Service} from '../services/q3.service'
     </ul>
   </div>
   `,
-  styles: []
+  styleUrls: ['../app.component.css']
 })
 
 export class Q1Component implements OnInit {
