@@ -26,9 +26,33 @@ export class AnswerComponent implements OnInit {
   line11:string;
   line12:string;
   myQuestionSet: QuestionSet;
+  score:number;
 
   constructor(private myQuestionDBService:QuestionDBService, private route: ActivatedRoute) {
     this.myQuestionSet=myQuestionDBService.getQuestionSet("GTyearLT25");
+    this.score=25;
+  }
+
+  calculateResults() {
+    if (this.answerOne == this.myQuestionSet.questions[0].correctAnswer) {
+      if (this.answerTwo == this.myQuestionSet.questions[1].correctAnswer) {
+        if (this.answerThree == this.myQuestionSet.questions[2].correctAnswer) {
+          this.score=100
+          return;
+        }
+      }
+    }
+    if (this.answerOne == this.myQuestionSet.questions[0].correctAnswer) {
+      this.score=this.score+25;
+    }
+
+    if (this.answerTwo == this.myQuestionSet.questions[1].correctAnswer) {
+      this.score=this.score+25;
+    }
+
+    if (this.answerThree == this.myQuestionSet.questions[2].correctAnswer) {
+      this.score=this.score+25;
+    }
   }
   ngOnInit() {
     this.route.paramMap.subscribe((params:ParamMap) => {
@@ -39,50 +63,6 @@ export class AnswerComponent implements OnInit {
       this.line1 = "";
       this.line2 = this.level+this.answerOne+this.answerTwo+this.answerThree;
     });
-
-    if (this.answerOne == this.myQuestionSet.questions[0].correctAnswer) {
-      if (this.answerTwo == this.myQuestionSet.questions[1].correctAnswer) {
-        if (this.answerThree == this.myQuestionSet.questions[2].correctAnswer) {
-          this.line1=("got it right")
-          return;
-        }
-      }
-    }
-    let correctAnswer = this.myQuestionSet.questions[0].correctAnswer;
-    this.line1="Question 1: " + this.myQuestionSet.questions[0].question;
-    let yourAnswer = parseInt(this.answerOne)
-    this.line2="Correct Answer: " + this.myQuestionSet.questions[0].answers[correctAnswer].name
-    this.line3="Your Answer: " + this.myQuestionSet.questions[0].answers[yourAnswer].name;
-
-    if (this.answerOne != correctAnswer) {
-      this.line4 = "INCORRECT: you really should hire an agile coach to help you out"
-    } else {
-      this.line4 = "CORRECT! -- Good Job Agilist!"
-    }
-
-    correctAnswer = this.myQuestionSet.questions[1].correctAnswer;
-    this.line5="Question 2: " + this.myQuestionSet.questions[1].question;
-    yourAnswer = parseInt(this.answerTwo)
-    this.line6="Correct Answer: " + this.myQuestionSet.questions[1].answers[correctAnswer].name
-    this.line7="Your Answer: " + this.myQuestionSet.questions[1].answers[yourAnswer].name;
-
-    if (this.answerTwo != correctAnswer) {
-      this.line8 = "INCORRECT: you really should hire an agile coach to help you out"
-    } else {
-      this.line8 = "CORRECT! -- Good Job Agilist!"
-    }
-
-    correctAnswer = this.myQuestionSet.questions[2].correctAnswer;
-    this.line9="Question 3: " + this.myQuestionSet.questions[2].question;
-    yourAnswer = parseInt(this.answerThree)
-    this.line10="Correct Answer: " + this.myQuestionSet.questions[2].answers[correctAnswer].name
-    this.line11="Your Answer: " + this.myQuestionSet.questions[2].answers[yourAnswer].name;
-
-    if (this.answerThree != correctAnswer) {
-      this.line12 = "INCORRECT: you really should hire an agile coach to help you out"
-    } else {
-      this.line12 = "CORRECT! -- Good Job Agilist!"
-    }
-
+    this.calculateResults();
   }
 }
