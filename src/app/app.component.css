@@ -59,3 +59,35 @@ h4 {
     color:red;
 }
 
+.inner_box_solid { 
+    position: relative; 
+    margin:auto;
+    width: 80%; 
+    text-align: left; 
+    padding: 35px;
+    background-color: gold; 
+
+    font-size:43px;
+    color:black;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+  } 
+
+  .inner_box_framed { 
+    position: relative; 
+    margin:auto;
+    text-align: left; 
+    width: 79.5%; 
+    padding: 35px;
+    border: solid 3px gold;
+    background-color: lightyellow; 
+  } 
+
+  .outer_box { 
+    position: relative; 
+    width: 100%; 
+    text-align: center; 
+    padding-bottom: 35px;
+    padding-top:20px;
+  } 
+

@@ -6,9 +6,29 @@ import {QuestionSet } from './questions/item';
 @Component({
   selector: 'app-answer',
   template: `
-    <p>
-      Calculating the answers!
-      </p>
+
+      <div class="outer_box">
+        <div class="inner_box_solid">
+          Your Score: 71%
+        </div>
+        <div class="inner_box_framed">
+          <h4>Thanks for taking our quiz! We hope that, no matter how well you did, you picked up a few ideas about how to be more #CyberAware. Learn more about protecting yourself online at NIST NCSAM tip sheets page.
+          </h4>
+        </div>
+      </div>
+      <h3>Question 1</h3>
+
+      <div class="outer_box">
+        <div class="inner_box_framed">
+            <h3>{{this.myQuestionSet.questions[0].question}}
+            </h3>
+        </div>
+        <div class="inner_box_framed">
+          <h4>Thanks for taking our quiz! We hope that, no matter how well you did, you picked up a few ideas about how to be more #CyberAware. Learn more about protecting yourself online at NIST NCSAM tip sheets page.
+          </h4>
+        </div>
+     </div>
+      <h3>{{this.myQuestionSet.questions[0].question}}<h3>
 
       <h2>{{line1}}</h2>
       <h2>{{line2}}</h2>
@@ -26,7 +46,7 @@ import {QuestionSet } from './questions/item';
       <h2>{{line12}}</h2>
 
   `,
-  styles: []
+  styleUrls: ['./app.component.css']
 })
 export class AnswerComponent implements OnInit {
   @Input() level: string; 
