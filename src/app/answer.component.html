@@ -3,10 +3,15 @@
       Your Score: {{score}}%
     </div>
     <div class="inner_box_framed">
-      <h4>Thanks for taking our quiz! We hope that, no matter how well you did, you picked up a few ideas Agile and how to write better software. Learn more about using Agile to get the best out of your team at<a href="https://www.solutionsati.com">SolutionsATI</a> web page.
-        .
-      </h4>
-      <button type="button" onclick="location.href='/'">Retake Quiz</button>
+        <div *ngIf="this.score != 100; else perfect">
+            <h4>Thanks for taking our quiz! We hope that, no matter how well you did, you picked up a few ideas Agile and how to write better software. Drop us an email at agileTeam@solutionsati.com to get the best out of your team.
+            </h4>
+        </div>
+        <ng-template #perfect>
+            <h4>Wow! You really know your stuff. Thanks for taking our quiz. Your challenge is to continue to advance to even higher levels of performance. Drop us an email at agileTeam@solutionsati.com to exchange ideas about getting to the next level.
+            </h4>
+        </ng-template>
+        <button type="button" onclick="location.href='/'">Retake Quiz</button>
     </div>
 </div>
 <h3>Question 1</h3>
