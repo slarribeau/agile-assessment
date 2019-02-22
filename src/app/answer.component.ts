@@ -27,10 +27,15 @@ export class AnswerComponent implements OnInit {
   line12:string;
   myQuestionSet: QuestionSet;
   score:number;
+  foo:QuestionDBService;
 
   constructor(private myQuestionDBService:QuestionDBService, private route: ActivatedRoute) {
-    this.myQuestionSet=myQuestionDBService.getQuestionSet("GTyearLT25");
+    this.foo=myQuestionDBService;
     this.score=25;
+    console.log("answer constructor begin")
+    console.log(this.level)
+    console.log(this.myQuestionSet)
+    console.log("answer constructor end")
   }
 
   calculateResults() {
@@ -63,6 +68,12 @@ export class AnswerComponent implements OnInit {
       this.line1 = "";
       this.line2 = this.level+this.answerOne+this.answerTwo+this.answerThree;
     });
+    this.myQuestionSet=this.foo.getQuestionSet(this.level);
+    this.score=25;
+    console.log("answer nginit begin")
+    console.log(this.level)
+    console.log(this.myQuestionSet)
+    console.log("answer nginit end")
     this.calculateResults();
   }
 }

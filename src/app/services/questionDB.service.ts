@@ -5,19 +5,19 @@ import { Answer, Question, QuestionSet } from '../questions/item';
 @Injectable()
 export class QuestionDBService {
   getQuestionSet(level:string){
-    if (level=="LTyearLT25") {
+    if (level=="lt.year.lt.25") {
       return this.q1;
     }
 
-    if (level=="LTyearGT25") {
+    if (level=="lt.year.gt.25") {
       return this.q2;
     }
 
-    if (level=="GTyearLT25") {
+    if (level=="gt.year.lt.25") {
       return this.q3;
     }
 
-    if (level=="GTyearGT25") {
+    if (level=="gt.year.gt.25") {
       return this.q4;
     }
   }
