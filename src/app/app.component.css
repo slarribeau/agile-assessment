@@ -117,7 +117,7 @@ button {
     margin:auto;
     text-align: left; 
     width: 79.5%; 
-    padding: 35px;
+    padding: 0 35px 35px 35px;
     border: solid 3px lightblue;
     background-color: lightblue; 
   } 
