@@ -28,9 +28,12 @@ export class QuestionDBService {
   q3: QuestionSet;
   q4: QuestionSet;
   passText:string;
+  cicdText:string;
 
   constructor(){
     this.passText = "Good job! Drop us an email at agileTeam@solutionsati.com to exchange ideas about getting even better at this topic.";
+    this.cicdText = "A Continuous Integration / Continuous Deployment (CI/CD) platform that is robust enough to support multiple daily deployments brings additional benefits to the engineering team:<br><br>- Automated regression -- Its a big investment to put this in place, but it has the additional benefit of freeing up resource to do more advanced testing than regression testing. It also de-risks refactoring projects. This is because regression tests can be easily run as a refactoring project is in progress to find unintended consequences.<br>- Blue-Green deployments -- Small checkins that are quickly deployed simplify debugging. Debugging a reverted checkin that is only a 10 lines change you did that morning is very different then debugging a 1000 line checkin that was worked on over a 2 month period.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area."
+    
     this.q1=
     {
       level: 'lt.year.lt.25',
@@ -137,7 +140,7 @@ export class QuestionDBService {
         {
           question:'How much formal Agile training has your team received?',
           passText:this.passText,
-          failText:'dude!',
+          failText:'Agile is a big change for a team that has done waterfall for many years. Training across the entire team is critical. There will be added confusion if some of the team is trained and others aren\'t. Ideally the training is performed as a group. This can serve as team building as well as the team learns about the new methodology together.<br>Also, Consider including stakeholders in the training. It is a great way to reduce mis-understandings as you proceed in your transition.<br>Please contact agileTeam@solutionsati.com for more ideas on the best way to get your team(s) trained.',
           points:15,
           correctAnswer:'E',
           answers: [
@@ -197,7 +200,7 @@ export class QuestionDBService {
         {
           question:'How much time are Scrum team members spending on their Scrum team assignments?',
           passText:this.passText,
-          failText:'dude!',
+          failText:'It is common to see new Scrum teams struggle to build momentum in larger organizations. This is often attributed to the following factors:<br><br>- Team members may be double booked. They may have other formal responsibilities besides being a member of the Scrum team.<br>- High priority borrowing -- Issues may arise that the Scrum team member has experience in resolving. This can be hard for all parties to resist if its a crisis.<br>- Team members have lots of informal responsibilities in addition to their formal job description. This comes from expertise built up in previous roles in the company. They may be asked for advice on a problem, or to make a "small" fix in a module they originally wrote. These small interruptions add up.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.<br>',
           points:15,
           correctAnswer:'B',
           answers: [
@@ -238,7 +241,7 @@ export class QuestionDBService {
         {
           question:'How often do you deploy software?',
           passText:this.passText,
-          failText:'dude!',
+          failText:this.cicdText,
           points:15,
           correctAnswer:'C',
           answers: [
@@ -263,7 +266,7 @@ export class QuestionDBService {
         {
           question:'We use Test Driven Development (TDD) in the following manner:',
           passText:this.passText,
-          failText:'dude!',
+          failText:'Test Driven Development brings the following benefits to a company:<br><br>- Improves design -- TDD requires you to think about the problem before you start coding the actual implementation. Many ambiguities in a user story will be quickly flushed out in this process. It also has the effect of directing you to write testable code. If you write code first and unit code as a secondary activity, you may find that certain aspects can\'t be tested. With TDD you write the test code first and then the actual code. This reversal sharply increases the testability of the code you write.<br>- Simplifies future refactoring efforts -- If someone has an idea on how to improve a piece of existing code, how do they make sure they haven\'t broken anything? With TDD its easy, you run the tests before and after your change and ensure that you haven\'t introduced a regression.<br>- Frees up testing resources for higher value work -- If developers can validate their own code to a high degree, then resources that would normally be doing basic functional testing can be assigned to testing performance, scaling and or security.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'E',
           answers: [
@@ -328,7 +331,7 @@ export class QuestionDBService {
         {
           question:'How often do you deploy software?',
           passText:this.passText,
-          failText:'dude!',
+          failText:this.cicdText,
           points:15,
           correctAnswer:'E',
           answers: [
@@ -357,7 +360,7 @@ export class QuestionDBService {
         {
           question:'Is Agile being used effectively in your organization?',
           passText:this.passText,
-          failText:'dude!',
+          failText:'Agile concepts are not complicated or long. However a lot of thought went into it. All organizations need to make small tweaks to Agile, that is what lets it breathe. But if your tweaks start to get bigger, beware, you start to clip the potential benefits that Agile can bring to your organization.<br>Examine the knowledge level of senior management If you have more than one box checked in this section. This may be a situation where their deeper understanding of how Agile works and its benefits will aide the organization.<br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'A',
           answers: [
@@ -386,7 +389,7 @@ export class QuestionDBService {
         {
           question:'The Agile teams in our organization are \'________\' blocked.',
           passText:this.passText,
-          failText:'dude!',
+          failText:'Below are a list of patterns that commonly cause blocking. Pinpointing the one(s) that impact your organization is the first step to reducing blocking.<br>- Different sprint lengths -- Coordinating between Scrum teams is complicated when they have different sprint lengths.<br>- Integration of waterfall and Agile -- Agile teams can share early "working-software" versions with each other. But sharing with a team that delivers at the end of the schedule brings special challenges.<br>- Not enough Subject Matter Experts (SME) - SMEs often need to be shared between Scrum teams. This can cause blocking if their allocation can\'t be leveled between the teams.<br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'B',
           answers: [
