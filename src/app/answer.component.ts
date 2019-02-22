@@ -5,47 +5,7 @@ import {QuestionSet } from './questions/item';
 
 @Component({
   selector: 'app-answer',
-  template: `
-
-      <div class="outer_box">
-        <div class="inner_box_solid">
-          Your Score: 71%
-        </div>
-        <div class="inner_box_framed">
-          <h4>Thanks for taking our quiz! We hope that, no matter how well you did, you picked up a few ideas about how to be more #CyberAware. Learn more about protecting yourself online at NIST NCSAM tip sheets page.
-          </h4>
-        </div>
-      </div>
-      <h3>Question 1</h3>
-
-      <div class="outer_box">
-        <div class="inner_box_framed">
-            <h3>{{this.myQuestionSet.questions[0].question}}
-            </h3>
-        </div>
-        <div class="inner_box_framed">
-          <h4>Thanks for taking our quiz! We hope that, no matter how well you did, you picked up a few ideas about how to be more #CyberAware. Learn more about protecting yourself online at NIST NCSAM tip sheets page.
-          </h4>
-        </div>
-     </div>
-      <h3>{{this.myQuestionSet.questions[0].question}}<h3>
-
-      <h2>{{line1}}</h2>
-      <h2>{{line2}}</h2>
-      <h2 style="color:red">{{line3}}</h2>
-      <h2>{{line4}}</h2>
----------------------------------
-      <h2>{{line5}}</h2>
-      <h2>{{line6}}</h2>
-      <h2 style="color:red">{{line7}}</h2>
-      <h2>{{line8}}</h2>
---------------------------------------
-      <h2>{{line9}}</h2>
-      <h2>{{line10}}</h2>
-      <h2 style="color:red">{{line11}}</h2>
-      <h2>{{line12}}</h2>
-
-  `,
+  templateUrl: './answer.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AnswerComponent implements OnInit {
