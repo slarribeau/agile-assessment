@@ -5,7 +5,6 @@
 
     </div>
     <router-outlet></router-outlet> 
-    {{this.router.url.substring(0,7)}}
     <div style="text-align:right">
         <span *ngIf="this.router.url.substring(0,7) != '/answer' ">
             <span *ngIf="this.router.url != '/' ">
