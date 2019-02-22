@@ -99,6 +99,15 @@ h4 {
     font-weight: 400;
   } 
 
+  .question_box { 
+    position: relative; 
+    margin:auto;
+    width: 95%; 
+    text-align: left; 
+    padding: 5px 35px 35px 35px;
+    background-color: brown; 
+  } 
+
   .inner_box_framed { 
     position: relative; 
     margin:auto;

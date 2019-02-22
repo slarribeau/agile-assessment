@@ -15,21 +15,18 @@ import { ITEMS } from './mock-data';
   template: `
   <h2>Question 1</h2>
     <h3>
-    Click the button below which best describes your company:
+    Which answer best describes your company?
     </h3>
 
-  <div>
+  <div class="question_box">
+    <h3> Choose One</h3>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let item of itemsList">
         <input type="radio" [(ngModel)]="radioSelected" name="list_name" value="{{item.value}}" (change)="onItemChange(item)" />
         {{item.name}}
-
       </li>
     </ul>
   </div>
-  <!--  <input type="radio" name="x" onclick="check(this.value)" value="Internet Explorer">Internet Explorer<br>
-  -->
-  <h5>{{radioSelectedString}}</h5>
   `,
   styleUrls: ['../app.component.css']
 })
