@@ -14,25 +14,33 @@
         <h3>{{this.myQuestionSet.questions[0].question}}
         </h3>
     </div>
-    <div *ngIf="this.answerOne == this.myQuestionSet.questions[0].correctAnswer ; else falsyTemplate">
+    <div *ngIf="this.answerOne == this.myQuestionSet.questions[0].correctAnswer ; else falsyTemplate0">
         <div class="inner_box_correct">
             Correct!
         </div>
+        <div class="inner_box_framed">
+            <h4>
+                {{this.myQuestionSet.questions[0].correctAnswer}} is Correct
+            </h4>
+            <h4>
+                {{this.myQuestionSet.questions[0].passText}}
+            </h4>
+        </div>  
     </div>
           
-    <ng-template #falsyTemplate>
+    <ng-template #falsyTemplate0>
         <div class="inner_box_incorrect">
             Incorrect
         </div>
-    </ng-template>
-    <div class="inner_box_framed">
-      <h4>
-            {{this.myQuestionSet.questions[0].correctAnswer}}  is the correct answer.
-       </h4>
-        <h4>
+        <div class="inner_box_framed">
+            <h4>
+                {{this.myQuestionSet.questions[0].correctAnswer}} is Correct
+            </h4>
+            <h4>
                 {{this.myQuestionSet.questions[0].failText}}
-      </h4>
-    </div>
+            </h4>
+        </div>        
+    </ng-template>
  </div>
 
 
