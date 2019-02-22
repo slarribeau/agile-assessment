@@ -13,9 +13,10 @@ import { ITEMS } from './mock-data';
 @Component({
   selector: 'app-main-question',
   template: `
-    <p>
+  <h2>Question 1</h2>
+    <h3>
     Click the button below which best describes your company:
-    </p>
+    </h3>
 
   <div>
     <ul class="list-group">
@@ -30,7 +31,7 @@ import { ITEMS } from './mock-data';
   -->
   <h5>{{radioSelectedString}}</h5>
   `,
-  styles: []
+  styleUrls: ['../app.component.css']
 })
 export class MainQuestionComponent implements OnInit {
   ngOnInit() {

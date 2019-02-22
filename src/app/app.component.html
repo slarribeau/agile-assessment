@@ -1,10 +1,13 @@
-<div>
-  <h1>Has Your Agile Team Hit The Wall?</h1>
-</div>
-<router-outlet></router-outlet> 
-<div style="text-align:center">
-    <button   (click)="prevButton()" >prev</button>
-    <button   (click)="nextButton()" >next</button>
-</div>
+<div class="inner_body">
+    <div>
+    <h1>Has Your Agile Team Hit The Wall?</h1>
+    <div class="tiny_dancer">Page 1 of 4</div>
 
+    </div>
+    <router-outlet></router-outlet> 
+    <div style="text-align:center">
+        <button   (click)="prevButton()" >prev</button>
+        <button   (click)="nextButton()" >next</button>
+    </div>
+</div>
 
