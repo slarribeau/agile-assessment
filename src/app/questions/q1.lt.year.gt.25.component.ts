@@ -13,7 +13,7 @@ export class q1LTyearGT25Component implements OnInit {
   myQuestionSet: QuestionSet;
   constructor(private myQuestionDBService:QuestionDBService) {
 
-    this.myQuestionSet=myQuestionDBService.getQuestionSet("LTyearGT25");
+    this.myQuestionSet=myQuestionDBService.getQuestionSet("lt.year.gt.25");
   }
   ngOnInit() {
     console.log(this.myQuestionSet)

@@ -5,6 +5,7 @@ import { Answer, Question, QuestionSet } from '../questions/item';
 @Injectable()
 export class QuestionDBService {
   getQuestionSet(level:string){
+    console.log("getQuestionSet " + level)
     if (level=="lt.year.lt.25") {
       return this.q1;
     }
@@ -20,6 +21,7 @@ export class QuestionDBService {
     if (level=="gt.year.gt.25") {
       return this.q4;
     }
+    console.log("Oops -- should not get here")
   }
   q1: QuestionSet;
   q2: QuestionSet;
