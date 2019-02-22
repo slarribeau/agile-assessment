@@ -1,0 +1,48 @@
+::ng-deep * {
+   font-family: 'Source Sans Pro', 'Courier New', Courier, monospace;
+   color:blue;
+   font-weight: 400;
+   font-style:normal;
+   letter-spacing: -0.5px;
+   text-size-adjust:100%;
+   font-size:23px;
+   -webkit-font-smoothing:antialiased;
+} 
+
+h1 {
+    font-size:43px;
+    color:green;
+    letter-spacing: 0.5px;
+    font-weight: 900;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+h2 {
+    font-size:30px;
+    color:purple;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-size:21px;
+    color:black;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.tiny_dancer {
+    font-size:14px;
+    color:rgba(76, 71, 71, 0.829);
+    font-style: italic;
+}
+
+.fancy {
+    font-size:43px;
+    color:black;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+* {
+    color:red;
+}
+
