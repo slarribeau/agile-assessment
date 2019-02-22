@@ -5,11 +5,14 @@
 
     </div>
     <router-outlet></router-outlet> 
+    {{this.router.url.substring(0,7)}}
     <div style="text-align:right">
-        <span *ngIf="this.router.url != '/' ">
-            <button   (click)="prevButton()" >prev</button>
+        <span *ngIf="this.router.url.substring(0,7) != '/answer' ">
+            <span *ngIf="this.router.url != '/' ">
+                <button   (click)="prevButton()" >prev</button>
+            </span>
+            <button   (click)="nextButton()" >next</button>
         </span>
-        <button   (click)="nextButton()" >next</button>
     </div>
 </div>
 
