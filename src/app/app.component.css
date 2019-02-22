@@ -81,7 +81,7 @@ button {
     width: 83%; 
     text-align: left; 
     padding-left: 35px;
-    background-color: red; 
+    background-color: gold; 
 
         /*h3*/
         font-size:21px;
@@ -95,7 +95,7 @@ button {
     width: 80%; 
     text-align: left; 
     padding: 35px;
-    background-color: gold; 
+    background-color: rgb(98, 98, 218); 
 
     font-size:43px;
     color:black;
@@ -119,7 +119,7 @@ button {
     width: 79.5%; 
     padding: 35px;
     border: solid 3px gold;
-    background-color: lightyellow; 
+    background-color: lightblue; 
   } 
 
   .outer_box { 
