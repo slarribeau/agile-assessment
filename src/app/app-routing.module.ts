@@ -15,6 +15,8 @@ import {q1GTyearGT25Component} from './questions/q1.gt.year.gt.25.component';
 import {q2GTyearGT25Component} from './questions/q2.gt.year.gt.25.component';
 import {q3GTyearGT25Component} from './questions/q3.gt.year.gt.25.component';
 import {AnswerComponent} from './answer.component';
+import {TestComponent} from './test.component';
+
 
 export const routes: Routes = [
   { path: 'main', component: MainQuestionComponent},
@@ -32,7 +34,7 @@ export const routes: Routes = [
   { path: 'q2gtyeargt25', component: q2GTyearGT25Component},
   { path: 'q3gtyeargt25', component: q3GTyearGT25Component},
   { path: 'answer/:level/:answerOne/:answerTwo/:answerThree', component: AnswerComponent},
-
+  { path: 'test', component: TestComponent},
   { path: '**', component: MainQuestionComponent }
 ];
 
