@@ -16,10 +16,15 @@ export class AnswerComponent implements OnInit {
   myQuestionSet: QuestionSet;
   score:number;
   foo:QuestionDBService;
+  displayCorrect:string;
+  displayInCorrect:string;
+
 
   constructor(private myQuestionDBService:QuestionDBService, private route: ActivatedRoute) {
     this.foo=myQuestionDBService;
     this.score=25;
+    this.displayCorrect="You selected the best answer!";
+    this.displayInCorrect="Your answer was not the best answer:";
     console.log("answer constructor begin")
     console.log(this.level)
     console.log(this.myQuestionSet)
