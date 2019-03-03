@@ -29,10 +29,14 @@ export class QuestionDBService {
   q4: QuestionSet;
   passText:string;
   cicdText:string;
+  cicdQuestion:string;
 
   constructor(){
     this.passText = "Good job! Drop us an email at slarribeau@solutionsati.com to exchange ideas about getting even better at this topic.";
-    this.cicdText = "A Continuous Integration / Continuous Deployment (CI/CD) platform that is robust enough to support multiple daily deployments brings additional benefits to the engineering team:<br><br>- Automated regression -- Its a big investment to put this in place, but it has the additional benefit of freeing up resource to do more advanced testing than regression testing. It also de-risks refactoring projects. This is because regression tests can be easily run as a refactoring project is in progress to find unintended consequences.<br>- Blue-Green deployments -- Small checkins that are quickly deployed simplify debugging. Debugging a reverted checkin that is only a 10 lines change you did that morning is very different then debugging a 1000 line checkin that was worked on over a 2 month period.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area."
+    
+    this.cicdText = "Having a Continuous Integration / Continuous Delivery (CI/CD) platform that is robust enough to support multiple daily deployments brings the following benefits to the engineering team:<br><br>&nbsp;&nbsp;&nbsp;o <b>Higher Value Testing</b> -- Testing efforts can be focused on higher value testing (e.g. Security, Performance) than regression testing. Once the regression testing is automated, quality experts are free to concentrate on higher value add testing. <br><br>&nbsp;&nbsp;&nbsp;o <b>Increased Code Quality</b> -- When regression testing is automated it de-risks refactoring projects. This is because regression tests can be easily run as a refactoring project is in progress to find unintended consequences.<br><br>&nbsp;&nbsp;&nbsp;o <b>Simpler Debugging</b> -- Small checkins that are quickly deployed simplify debugging. Debugging a reverted checkin that is only a 10 lines change you did that morning is very different then debugging a 1000 line checkin that was worked on over a 2 month period.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area."
+
+    this.cicdQuestion = "Many organizations do not want to deploy software daily. Their customers aren\t comfortable with it. However, having an environment that could theoretically deploy multible times a day is still beneficial. It shows that a high degree of automation has been developed. <br><br>How often could you deploy software today if your customer allowed it?"
     
     this.q1=
     {
@@ -234,26 +238,26 @@ export class QuestionDBService {
       questions:
       [
         {
-          question:'How often do you deploy software?',
+          question:this.cicdQuestion,
           passText:this.passText,
           failText:this.cicdText,
           points:15,
-          correctAnswer:'C',
+          correctAnswer:'D',
           answers: [
             {
-              name:'We have the infrastructure in place where we could deploy quarterly.',
+              name:'Monthly.',
               value:'A'
             },
             {
-              name:'We have the infrastructure in place where we could deploy weekly',
+              name:'Weekly.',
               value:'B'
             },
             {
-              name:'We have the infrastructure in place where we could deploy daily.',
+              name:'Daily.',
               value:'C'
             },
             {
-              name:'We have the infrastructure in place where we could deploy multiple times a day.',
+              name:'Multiple times a day.',
               value:'D'
             }
           ],
@@ -324,32 +328,28 @@ export class QuestionDBService {
       questions:
       [
         {
-          question:'How often do you deploy software?',
+          question:this.cicdQuestion,
           passText:this.passText,
           failText:this.cicdText,
           points:15,
-          correctAnswer:'E',
+          correctAnswer:'D',
           answers: [
             {
-              name:'We have the infrastructure in place where we could deploy quarterly.',
+              name:'Monthly.',
               value:'A'
             },
             {
-              name:'We have the infrastructure in place where we could deploy monthly',
+              name:'Weekly.',
               value:'B'
             },
             {
-              name:'We have the infrastructure in place where we could deploy weekly.',
+              name:'Daily.',
               value:'C'
             },
             {
-              name:'We have the infrastructure in place where we could deploy daily.',
+              name:'Multiple times a day.',
               value:'D'
-            },
-            {
-              name:'We have the infrastructure in place where we could deploy multiple times a day.',
-              value:'E'
-            },
+            }
           ],
         },
         {
