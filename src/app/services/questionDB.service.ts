@@ -170,7 +170,7 @@ export class QuestionDBService {
         {
           question:'Are your Scrum teams cross-functional?',
           passText:this.passText,
-          failText:'dude!',
+          failText:'Teams that are not cross-functional suffer from the following: <br>1) Dependencies <br>2) The dependencies add wait states<br>3)This in turn makes achieving momentum harder<br>4)Lots of autonomy.<br>Please contact agileTeam@solutionsati.com for more ideas on this topic',
           points:15,
           correctAnswer:'E',
           answers: [
@@ -295,7 +295,7 @@ export class QuestionDBService {
         {
           question:'The most recent problem that we identified in a sprint retrospective and solved was \'__________\':',
           passText:this.passText,
-          failText:'dude!',
+          failText:'.Retrospectives are an opportunity for the team to influence its own outcomes. There are times where business needs require the team to add an extra story to the sprint. This can\t really be controlled. However, when the sprint is complete and you sit down as a group, this is the teams chance to express their ideas on how to improve. Talking and brainstorming is great, but working to actually implement ideas from the retrospective is where you really get the benefit.  <br>Please contact agileTeam@solutionsati.com for more ideas on the best way to get your team(s) trained.!',
           points:15,
           correctAnswer:'D',
           answers: [
