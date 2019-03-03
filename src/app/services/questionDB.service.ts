@@ -36,7 +36,7 @@ export class QuestionDBService {
     
     this.cicdText = "Having a Continuous Integration / Continuous Delivery (CI/CD) platform that is robust enough to support multiple daily deployments brings the following benefits to the engineering team:<br><br>&nbsp;&nbsp;&nbsp;o <b>Higher Value Testing</b> -- Testing efforts can be focused on higher value testing (e.g. Security, Performance) than regression testing. Once the regression testing is automated, quality experts are free to concentrate on higher value add testing. <br><br>&nbsp;&nbsp;&nbsp;o <b>Increased Code Quality</b> -- When regression testing is automated it de-risks refactoring projects. This is because regression tests can be easily run as a refactoring project is in progress to find unintended consequences.<br><br>&nbsp;&nbsp;&nbsp;o <b>Simpler Debugging</b> -- Small checkins that are quickly deployed simplify debugging. Debugging a reverted checkin that is only a 10 lines change you did that morning is very different then debugging a 1000 line checkin that was worked on over a 2 month period.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area."
 
-    this.cicdQuestion = "Many organizations do not want to deploy software daily. Their customers aren\t comfortable with it. However, having an environment that could theoretically deploy multible times a day is still beneficial. It shows that a high degree of automation has been developed. <br><br>How often could you deploy software today if your customer allowed it?"
+    this.cicdQuestion = "Many organizations do not want to deploy software daily. Their customers aren\'t comfortable with it. However, having an environment that could theoretically deploy multible times a day is still beneficial. It shows that a high degree of automation has been developed. <br><br>How often could you deploy software today if your customer allowed it?"
     
     this.q1=
     {
@@ -265,16 +265,16 @@ export class QuestionDBService {
         {
           question:'We use Test Driven Development (TDD) in the following manner:',
           passText:this.passText,
-          failText:'Test Driven Development brings the following benefits to a company:<br><br>- Improves design -- TDD requires you to think about the problem before you start coding the actual implementation. Many ambiguities in a user story will be quickly flushed out in this process. It also has the effect of directing you to write testable code. If you write code first and unit code as a secondary activity, you may find that certain aspects can\'t be tested. With TDD you write the test code first and then the actual code. This reversal sharply increases the testability of the code you write.<br>- Simplifies future refactoring efforts -- If someone has an idea on how to improve a piece of existing code, how do they make sure they haven\'t broken anything? With TDD its easy, you run the tests before and after your change and ensure that you haven\'t introduced a regression.<br>- Frees up testing resources for higher value work -- If developers can validate their own code to a high degree, then resources that would normally be doing basic functional testing can be assigned to testing performance, scaling and or security.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'Test Driven Development brings the following benefits to a company:<br><br>&nbsp;&nbsp;&nbsp;o <b>Improved Design</b> -- TDD requires you to think about the problem before you start coding the actual implementation. Many ambiguities in a user story will be quickly flushed out in this process. <br><br>&nbsp;&nbsp;&nbsp;o <b>Improved Testablility of Code</b> -- TDD has the effect of directing you to write testable code. If you write code first and unit code as a secondary activity, you may find that certain aspects can\'t be tested. With TDD you write the test code first and then the actual code. This reversal sharply increases the testability of the code you write.<br><br>&nbsp;&nbsp;&nbsp;o <b>Confidence To Refactor</b> -- If someone has an idea on how to improve a piece of existing code, how do they make sure they haven\'t broken anything? With TDD its easy, you run the tests before and after your change and ensure that you haven\'t introduced a regression.<br><br>&nbsp;&nbsp;&nbsp;o <b>Frees Testing Resources For Higher Value Work</b> -- If developers can validate their own code to a high degree, then resources that would normally be doing basic functional testing can be assigned to testing performance, scaling and or security.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'E',
           answers: [
             {
-              name:'What\'s TDD?',
+              name:'None of our developers use TDD',
               value:'A'
             },
             {
-              name:'Have heard of it most of us don\'t use it.',
+              name:'Some of our developers use TDD.',
               value:'B'
             },
             {
@@ -294,7 +294,7 @@ export class QuestionDBService {
         {
           question:'The most recent problem that we identified in a sprint retrospective and solved was \'__________\':',
           passText:this.passText,
-          failText:'.Retrospectives are an opportunity for the team to influence its own outcomes. There are times where business needs require the team to add an extra story to the sprint. This can\t really be controlled. However, when the sprint is complete and you sit down as a group, this is the teams chance to express their ideas on how to improve. Talking and brainstorming is great, but working to actually implement ideas from the retrospective is where you really get the benefit.  <br>Please contact slarribeau@solutionsati.com for more ideas on the best way to get your team(s) trained.!',
+          failText:'.Retrospectives are an opportunity for the team to influence its own outcomes. There are times where business needs require the team to add an extra story to the sprint. This can\'t really be controlled. However, when the sprint is complete and you sit down as a group, this is the teams chance to express their ideas on how to improve. Talking and brainstorming is great, but working to actually implement ideas from the retrospective is where you really get the benefit.<br><br>Please contact slarribeau@solutionsati.com for more ideas on the best way to get your team(s) trained.!',
           points:15,
           correctAnswer:'D',
           answers: [
