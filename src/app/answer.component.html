@@ -27,7 +27,10 @@
         </div>
         <div class="inner_box_framed">
             <h4>
-                {{this.myQuestionSet.questions[0].correctAnswer}} {{this.myQuestionSet.questions[0].answers[this.myQuestionSet.questions[0].correctAnswer.charCodeAt(0)-'A'.charCodeAt(0)]}}<br>is Correct
+                <img src="assets/pass.png" alt="some text" width=16 height=16 style="float:left;">
+                {{this.myQuestionSet.questions[0].correctAnswer}})&nbsp;"
+
+                {{this.myQuestionSet.questions[0].answers[this.myQuestionSet.questions[0].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
             </h4>
             <h4
             [innerHTML]="this.myQuestionSet.questions[0].passText">
@@ -72,7 +75,13 @@
              Correct!
          </div>
          <div class="inner_box_framed">
-             <h4>
+            <h4>
+                <img src="assets/pass.png" alt="some text" width=16 height=16 style="float:left;">
+                {{this.myQuestionSet.questions[1].correctAnswer}})&nbsp;"
+
+                {{this.myQuestionSet.questions[1].answers[this.myQuestionSet.questions[1].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
+            </h4>
+             <h4
              [innerHTML]="this.myQuestionSet.questions[1].passText">
              </h4>
          </div>  
@@ -114,12 +123,15 @@
               Correct!
           </div>
           <div class="inner_box_framed">
-              <h4>
-                  {{this.myQuestionSet.questions[2].correctAnswer}} is Correct
-              </h4>
-              <h4
-              [innerHTML]="this.myQuestionSet.questions[2].passText">
-              </h4>
+            <h4>
+                <img src="assets/pass.png" alt="some text" width=16 height=16 style="float:left;">
+                {{this.myQuestionSet.questions[2].correctAnswer}})&nbsp;"
+
+                {{this.myQuestionSet.questions[2].answers[this.myQuestionSet.questions[2].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
+            </h4>
+            <h4
+            [innerHTML]="this.myQuestionSet.questions[2].passText">
+            </h4>
           </div>  
       </div>
             
