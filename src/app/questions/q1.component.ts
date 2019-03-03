@@ -9,8 +9,8 @@ import {Q3Service} from '../services/q3.service'
   selector: 'app-q1',
   template: `
   <h2>Question {{qIndex+2}}</h2>
-  <h3>
-  {{itemsList1.questions[qIndex].question}}
+  <h3 [innerHTML]=
+  "itemsList1.questions[qIndex].question">
   </h3>
   <div class="question_box">
     <h3> Choose One</h3>

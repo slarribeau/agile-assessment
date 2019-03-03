@@ -18,7 +18,8 @@
 
 <div class="outer_box">
     <div class="inner_box_framed">
-        <h3>{{this.myQuestionSet.questions[0].question}}
+        <h3 [innerHTML]=
+        "this.myQuestionSet.questions[0].question">
         </h3>
     </div>
     <div *ngIf="this.answerOne == this.myQuestionSet.questions[0].correctAnswer ; else falsyTemplate0">
@@ -67,8 +68,9 @@
 
  <div class="outer_box">
      <div class="inner_box_framed">
-         <h3>{{this.myQuestionSet.questions[1].question}}
-         </h3>
+            <h3 [innerHTML]=
+            "this.myQuestionSet.questions[1].question">
+            </h3>
      </div>
      <div *ngIf="this.answerTwo == this.myQuestionSet.questions[1].correctAnswer ; else falsyTemplate1">
          <div class="inner_box_correct">
@@ -115,8 +117,9 @@
 
   <div class="outer_box">
       <div class="inner_box_framed">
-          <h3>{{this.myQuestionSet.questions[2].question}}
-          </h3>
+            <h3 [innerHTML]=
+            "this.myQuestionSet.questions[2].question">
+            </h3>
       </div>
       <div *ngIf="this.answerThree == this.myQuestionSet.questions[2].correctAnswer ; else falsyTemplate2">
           <div class="inner_box_correct">

@@ -31,8 +31,8 @@ export class QuestionDBService {
   cicdText:string;
 
   constructor(){
-    this.passText = "Good job! Drop us an email at agileTeam@solutionsati.com to exchange ideas about getting even better at this topic.";
-    this.cicdText = "A Continuous Integration / Continuous Deployment (CI/CD) platform that is robust enough to support multiple daily deployments brings additional benefits to the engineering team:<br><br>- Automated regression -- Its a big investment to put this in place, but it has the additional benefit of freeing up resource to do more advanced testing than regression testing. It also de-risks refactoring projects. This is because regression tests can be easily run as a refactoring project is in progress to find unintended consequences.<br>- Blue-Green deployments -- Small checkins that are quickly deployed simplify debugging. Debugging a reverted checkin that is only a 10 lines change you did that morning is very different then debugging a 1000 line checkin that was worked on over a 2 month period.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area."
+    this.passText = "Good job! Drop us an email at slarribeau@solutionsati.com to exchange ideas about getting even better at this topic.";
+    this.cicdText = "A Continuous Integration / Continuous Deployment (CI/CD) platform that is robust enough to support multiple daily deployments brings additional benefits to the engineering team:<br><br>- Automated regression -- Its a big investment to put this in place, but it has the additional benefit of freeing up resource to do more advanced testing than regression testing. It also de-risks refactoring projects. This is because regression tests can be easily run as a refactoring project is in progress to find unintended consequences.<br>- Blue-Green deployments -- Small checkins that are quickly deployed simplify debugging. Debugging a reverted checkin that is only a 10 lines change you did that morning is very different then debugging a 1000 line checkin that was worked on over a 2 month period.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area."
     
     this.q1=
     {
@@ -43,9 +43,9 @@ export class QuestionDBService {
       questions:
       [
         {
-          question:'Do your user stories deliver functionality in \'vertically sliced\' increments?',
+          question:'Do your user stories deliver functionality in <a href="https://en.wikipedia.org/wiki/Vertical_slice" target="_blank">\'vertically sliced\'</a> increments?',
           passText:this.passText,
-          failText:'Vertical slices allow you to split up projects into small work increments that the stakeholders (including customers) can see and give feedback on. The slices may not be complete enough for production, but the feedback and transparency are invaluable. <br><br> You get the added benefits of: <br>- Your team becoming autonomous -- You may find that to deliver vertical slices, you have to change the staffing of your scrum team(s) so that you have the necessary skills to change each layer of the stack.<br>- You can turn things around to user quickly and incorporate feedback -- Delivering vertical slice increments within the scrum team reduces inter-team dependencies, which reduces delay.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'Vertical slices allow you to split up projects into small work increments that stakeholders (including customers) can see and give feedback on. The slices may not be complete enough for production, but the feedback and transparency are invaluable. <br><br> Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'C',
           answers: [
@@ -54,7 +54,7 @@ export class QuestionDBService {
               value:'A'
             },
             {
-              name:'I\'m not quite sure what a vertical slice is.',
+              name:'I\'m still not quite sure what a vertical slice is.',
               value:'B'
             },
             {
@@ -66,7 +66,7 @@ export class QuestionDBService {
               value:'D'
             },
             {
-              name:'The structure of our organization does not allow us to deliver vertical slices.',
+              name:'The structure of our organization makes delivery of vertical slices difficult.',
               value:'E'
             },
           ],
@@ -74,28 +74,28 @@ export class QuestionDBService {
         {
           question:'How long is delay between development and formal testing of a feature? ',
           passText:this.passText,
-          failText:'There are many benefits to having no gap between testing and development:<br><br>- The logic is fresh in the developers mind<br>- Less likely to have developer context switch between previous and current task<br>-Richer interactions between tester and developer<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'The goal is to make the gap as small as possible between development and formal testing of a feature:<br><br>&nbsp;&nbsp;&nbsp;o <b>Speeds resolution</b> -- The shorter the gap the more fresh the logic is in the developers mind.<br><br>&nbsp;&nbsp;&nbsp;o <b>Reduction of developer context-switch costs</b> -- Giving feedback on the feature before work starts on the next feature reduces this overhead.<br><br>&nbsp;&nbsp;&nbsp;o <b>Richer interactions between tester and developer</b> -- Immediate feedback is kind of fun to receive compared to getting \'interrupted\' while working on the next feature.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'A',
           answers: [
             {
-              name:'None -- We either have developers test their own code or formal testing starts the day the feature is completed.',
+              name:'Zero to two days.',
               value:'A'
             },
             {
-              name:'We deploy quarterly. A feature that is complete on Jan 15 may not get tested until end of March.',
+              name:'One week.',
               value:'B'
             },
             {
-              name:'Not more than 2 weeks.',
+              name:'Two weeks.',
               value:'C'
             },
             {
-              name:'Not more than 8 weeks.',
+              name:'One Month.',
               value:'D'
             },
             {
-              name:'Not more than 4 weeks.',
+              name:'One Quarter.',
               value:'E'
             }
           ],
@@ -103,7 +103,7 @@ export class QuestionDBService {
         {
           question:'How many days are spent coding a typical user story?',
           passText:this.passText,
-          failText:'There are many benefits to having user stories that can be coded in one-three days:<br><br>- Easier to estimate -- This is because the granularity is smaller. This allows the estimators to think deeper about what it would take to do the actual implementation, raising the quality of the estimate.<br>- Less ambiguity -- Short stories bring clarity since the domain that is being described is smaller. There is a great savings here in time. Ambiguous user stories slow down developer flow as they either have to stop and research the correct answer, or take a chance and take the risk of re-work if the wrong choice was selected.<br>- Easier to test -- Shorter stories do fewer things. Its easier to document input, outputs and expected behavior. There are also fewer test cases with smaller stories, so there is less work for testing.<br>- Feels good when you finish a story shortly after starting it -- Correspondingly, a four week story feels like a long march. It can really build a teams morale to see someone\'s story submitted every day and have testing start on that same day.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'There are many benefits to having user stories that can be coded in one to three days:<br><br>&nbsp;&nbsp;&nbsp;o <b>Easier to estimate</b> -- This is because the granularity is smaller. This allows the estimators to think deeper about what it would take to do the actual implementation.<br><br>&nbsp;&nbsp;&nbsp;o <b>Reduces ambiguity</b> -- Short stories bring clarity since the domain that is being described is smaller. Ambiguous user stories slow down developer flow when they either have to research the correct answer.<br><br>&nbsp;&nbsp;&nbsp;o <b>Simplifies testing</b> -- Shorter stories do fewer things. Its easier to document input, outputs and expected behavior. There are also fewer test cases with smaller stories, so there is less work for testing.<br><br>&nbsp;&nbsp;&nbsp;o <b>Feels good</b> -- Knocking out a story the same day you start it is satisfying. Correspondingly, a four week story feels like a very long march. <br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'B',
           answers: [
@@ -112,15 +112,15 @@ export class QuestionDBService {
               value:'A'
             },
             {
-                name:'Most stories can be coded in 1-3 days.',
+                name:'Most user stories can be coded in one to three days.',
                 value:'B'
             },
             {
-                name:'Coding a story rarely exceeds one week',
+                name:'Coding a user story rarely exceeds one week',
                 value:'C'
             },
             {
-              name:'Coding a story rarely exceeds two weeks',
+              name:'Coding a user story rarely exceeds two weeks',
               value:'D'
             }
           ],
@@ -140,7 +140,7 @@ export class QuestionDBService {
         {
           question:'How much formal Agile training has your team received?',
           passText:this.passText,
-          failText:'Agile is a big change for a team that has done waterfall for many years. Training across the entire team is critical. There will be added confusion if some of the team is trained and others aren\'t. Ideally the training is performed as a group. This can serve as team building as well as the team learns about the new methodology together.<br>Also, Consider including stakeholders in the training. It is a great way to reduce mis-understandings as you proceed in your transition.<br>Please contact agileTeam@solutionsati.com for more ideas on the best way to get your team(s) trained.',
+          failText:'Agile is a big change for a team that has done waterfall for many years. Training across the entire team is critical. There will be added confusion if some of the team is trained and others aren\'t. Ideally the training is performed as a group. This can serve as team building as well as the team learns about the new methodology together.<br>Also, Consider including stakeholders in the training. It is a great way to reduce mis-understandings as you proceed in your transition.<br>Please contact slarribeau@solutionsati.com for more ideas on the best way to get your team(s) trained.',
           points:15,
           correctAnswer:'E',
           answers: [
@@ -170,7 +170,7 @@ export class QuestionDBService {
         {
           question:'Are your Scrum teams cross-functional?',
           passText:this.passText,
-          failText:'Teams that are not cross-functional suffer from the following: <br>1) Dependencies <br>2) The dependencies add wait states<br>3)This in turn makes achieving momentum harder<br>4)Lots of autonomy.<br>Please contact agileTeam@solutionsati.com for more ideas on this topic',
+          failText:'Teams that are not cross-functional suffer from the following: <br>1) Dependencies <br>2) The dependencies add wait states<br>3)This in turn makes achieving momentum harder<br>4)Lots of autonomy.<br>Please contact slarribeau@solutionsati.com for more ideas on this topic',
           points:15,
           correctAnswer:'E',
           answers: [
@@ -200,7 +200,7 @@ export class QuestionDBService {
         {
           question:'How much time are Scrum team members spending on their Scrum team assignments?',
           passText:this.passText,
-          failText:'It is common to see new Scrum teams struggle to build momentum in larger organizations. This is often attributed to the following factors:<br><br>- Team members may be double booked. They may have other formal responsibilities besides being a member of the Scrum team.<br>- High priority borrowing -- Issues may arise that the Scrum team member has experience in resolving. This can be hard for all parties to resist if its a crisis.<br>- Team members have lots of informal responsibilities in addition to their formal job description. This comes from expertise built up in previous roles in the company. They may be asked for advice on a problem, or to make a "small" fix in a module they originally wrote. These small interruptions add up.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.<br>',
+          failText:'It is common to see new Scrum teams struggle to build momentum in larger organizations. This is often attributed to the following factors:<br><br>- Team members may be double booked. They may have other formal responsibilities besides being a member of the Scrum team.<br>- High priority borrowing -- Issues may arise that the Scrum team member has experience in resolving. This can be hard for all parties to resist if its a crisis.<br>- Team members have lots of informal responsibilities in addition to their formal job description. This comes from expertise built up in previous roles in the company. They may be asked for advice on a problem, or to make a "small" fix in a module they originally wrote. These small interruptions add up.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.<br>',
           points:15,
           correctAnswer:'B',
           answers: [
@@ -266,7 +266,7 @@ export class QuestionDBService {
         {
           question:'We use Test Driven Development (TDD) in the following manner:',
           passText:this.passText,
-          failText:'Test Driven Development brings the following benefits to a company:<br><br>- Improves design -- TDD requires you to think about the problem before you start coding the actual implementation. Many ambiguities in a user story will be quickly flushed out in this process. It also has the effect of directing you to write testable code. If you write code first and unit code as a secondary activity, you may find that certain aspects can\'t be tested. With TDD you write the test code first and then the actual code. This reversal sharply increases the testability of the code you write.<br>- Simplifies future refactoring efforts -- If someone has an idea on how to improve a piece of existing code, how do they make sure they haven\'t broken anything? With TDD its easy, you run the tests before and after your change and ensure that you haven\'t introduced a regression.<br>- Frees up testing resources for higher value work -- If developers can validate their own code to a high degree, then resources that would normally be doing basic functional testing can be assigned to testing performance, scaling and or security.<br><br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'Test Driven Development brings the following benefits to a company:<br><br>- Improves design -- TDD requires you to think about the problem before you start coding the actual implementation. Many ambiguities in a user story will be quickly flushed out in this process. It also has the effect of directing you to write testable code. If you write code first and unit code as a secondary activity, you may find that certain aspects can\'t be tested. With TDD you write the test code first and then the actual code. This reversal sharply increases the testability of the code you write.<br>- Simplifies future refactoring efforts -- If someone has an idea on how to improve a piece of existing code, how do they make sure they haven\'t broken anything? With TDD its easy, you run the tests before and after your change and ensure that you haven\'t introduced a regression.<br>- Frees up testing resources for higher value work -- If developers can validate their own code to a high degree, then resources that would normally be doing basic functional testing can be assigned to testing performance, scaling and or security.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'E',
           answers: [
@@ -295,7 +295,7 @@ export class QuestionDBService {
         {
           question:'The most recent problem that we identified in a sprint retrospective and solved was \'__________\':',
           passText:this.passText,
-          failText:'.Retrospectives are an opportunity for the team to influence its own outcomes. There are times where business needs require the team to add an extra story to the sprint. This can\t really be controlled. However, when the sprint is complete and you sit down as a group, this is the teams chance to express their ideas on how to improve. Talking and brainstorming is great, but working to actually implement ideas from the retrospective is where you really get the benefit.  <br>Please contact agileTeam@solutionsati.com for more ideas on the best way to get your team(s) trained.!',
+          failText:'.Retrospectives are an opportunity for the team to influence its own outcomes. There are times where business needs require the team to add an extra story to the sprint. This can\t really be controlled. However, when the sprint is complete and you sit down as a group, this is the teams chance to express their ideas on how to improve. Talking and brainstorming is great, but working to actually implement ideas from the retrospective is where you really get the benefit.  <br>Please contact slarribeau@solutionsati.com for more ideas on the best way to get your team(s) trained.!',
           points:15,
           correctAnswer:'D',
           answers: [
@@ -360,7 +360,7 @@ export class QuestionDBService {
         {
           question:'Is Agile being used effectively in your organization?',
           passText:this.passText,
-          failText:'Agile concepts are not complicated or long. However a lot of thought went into it. All organizations need to make small tweaks to Agile, that is what lets it breathe. But if your tweaks start to get bigger, beware, you start to clip the potential benefits that Agile can bring to your organization.<br>Examine the knowledge level of senior management If you have more than one box checked in this section. This may be a situation where their deeper understanding of how Agile works and its benefits will aide the organization.<br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'Agile concepts are not complicated or long. However a lot of thought went into it. All organizations need to make small tweaks to Agile, that is what lets it breathe. But if your tweaks start to get bigger, beware, you start to clip the potential benefits that Agile can bring to your organization.<br>Examine the knowledge level of senior management If you have more than one box checked in this section. This may be a situation where their deeper understanding of how Agile works and its benefits will aide the organization.<br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'A',
           answers: [
@@ -389,7 +389,7 @@ export class QuestionDBService {
         {
           question:'The Agile teams in our organization are \'________\' blocked.',
           passText:this.passText,
-          failText:'Below are a list of patterns that commonly cause blocking. Pinpointing the one(s) that impact your organization is the first step to reducing blocking.<br>- Different sprint lengths -- Coordinating between Scrum teams is complicated when they have different sprint lengths.<br>- Integration of waterfall and Agile -- Agile teams can share early "working-software" versions with each other. But sharing with a team that delivers at the end of the schedule brings special challenges.<br>- Not enough Subject Matter Experts (SME) - SMEs often need to be shared between Scrum teams. This can cause blocking if their allocation can\'t be leveled between the teams.<br>Please contact agileTeam@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'Below are a list of patterns that commonly cause blocking. Pinpointing the one(s) that impact your organization is the first step to reducing blocking.<br>- Different sprint lengths -- Coordinating between Scrum teams is complicated when they have different sprint lengths.<br>- Integration of waterfall and Agile -- Agile teams can share early "working-software" versions with each other. But sharing with a team that delivers at the end of the schedule brings special challenges.<br>- Not enough Subject Matter Experts (SME) - SMEs often need to be shared between Scrum teams. This can cause blocking if their allocation can\'t be leveled between the teams.<br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'B',
           answers: [
