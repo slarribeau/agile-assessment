@@ -294,7 +294,7 @@ export class QuestionDBService {
         {
           question:'The most recent problem that we identified in a sprint retrospective and solved was \'__________\':',
           passText:this.passText,
-          failText:'.Retrospectives are an opportunity for the team to influence its own outcomes. There are times where business needs require the team to add an extra story to the sprint. This can\'t really be controlled. However, when the sprint is complete and you sit down as a group, this is the teams chance to express their ideas on how to improve. Talking and brainstorming is great, but working to actually implement ideas from the retrospective is where you really get the benefit.<br><br>Please contact slarribeau@solutionsati.com for more ideas on the best way to get your team(s) trained.!',
+          failText:'Retrospectives are an opportunity for the team to influence its own outcomes. There are times where business needs require the team to add an extra story to the sprint. This can\'t really be controlled. However, when the sprint is complete and you sit down as a group, this is the team\'s chance to express their ideas on how to improve. Talking and brainstorming is great, but working to actually implement ideas from the retrospective is where you really get the benefit.<br><br>Please contact slarribeau@solutionsati.com for more ideas on getting the most from your retrespectives.',
           points:15,
           correctAnswer:'D',
           answers: [
@@ -353,26 +353,26 @@ export class QuestionDBService {
           ],
         },
         {
-          question:'Is Agile being used effectively in your organization?',
+          question:'Are any of these Agile anti-patterns common in your organization?',
           passText:this.passText,
-          failText:'Agile concepts are not complicated or long. However a lot of thought went into it. All organizations need to make small tweaks to Agile, that is what lets it breathe. But if your tweaks start to get bigger, beware, you start to clip the potential benefits that Agile can bring to your organization.<br>Examine the knowledge level of senior management If you have more than one box checked in this section. This may be a situation where their deeper understanding of how Agile works and its benefits will aide the organization.<br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'The basic Agile concepts are not complex. However, a lot of thought and accumulated experience went into them. Most organizations need to make small tweaks to Agile, that is what lets it breathe. Beware if your tweaks start to get bigger -- you will start to clip the potential benefits that Agile can bring to your organization.<br><br>Examine the knowledge level of senior management if you wanted to check more than one box checked in this section. This may be a situation where assisting the senior managers in gaining deeper understanding of Agile works can aide the organization.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
-          correctAnswer:'A',
+          correctAnswer:'E',
           answers: [
             {
-              name:'Tampering -- Agile processes are only used when its convenient. When the organization is under stress, it often falls back to the incumbent ways of operating.',
+              name:'Backsliding -- Agile processes are only used when its convenient. Organization falls back to incumbent ways of operating when under stress.',
               value:'A'
             },
             {
-              name:'Micro management -- Organization is not comfortable with self-directed teams. There is a tendency to dictate solutions.',
+              name:'Micro Management -- Organization is not comfortable with self-directed teams. There is a tendency to dictate solutions.',
               value:'B'
             },
             {
-              name:'Loss of checks and balances -- Product Owner and Scrum Master role are combined into one role.',
+              name:'Loss of Checks and Balances -- Product Owner and Scrum Master role are combined into one role.',
               value:'C'
             },
             {
-              name:'Product vision is unclear -- Not enough time is spent communicating to the Scrum teams the future direction and goals of the product.',
+              name:'Product Vision is Unclear -- Not enough time is spent communicating to the Scrum teams the future direction and goals of the product.',
               value:'D'
             },
             {
@@ -384,7 +384,7 @@ export class QuestionDBService {
         {
           question:'The Agile teams in our organization are \'________\' blocked.',
           passText:this.passText,
-          failText:'Below are a list of patterns that commonly cause blocking. Pinpointing the one(s) that impact your organization is the first step to reducing blocking.<br>- Different sprint lengths -- Coordinating between Scrum teams is complicated when they have different sprint lengths.<br>- Integration of waterfall and Agile -- Agile teams can share early "working-software" versions with each other. But sharing with a team that delivers at the end of the schedule brings special challenges.<br>- Not enough Subject Matter Experts (SME) - SMEs often need to be shared between Scrum teams. This can cause blocking if their allocation can\'t be leveled between the teams.<br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
+          failText:'Below is a partial list of patterns that commonly cause blocking. Pinpointing the one(s) that impact your organization is the first step to reducing blocking.<br><br>&nbsp;&nbsp;&nbsp;o <b>Different Sprint Lengths</b> -- Coordinating between Scrum teams is complicated when they have different sprint lengths.<br><br>&nbsp;&nbsp;&nbsp;o <b>Integration of Waterfall and Agile</b> -- Agile teams can share early "working-software" versions with each other. But sharing with a team that delivers at the end of the schedule brings special challenges.<br><br>&nbsp;&nbsp;&nbsp;o <b>Not Enough Subject Matter Experts (SME)</b> - SMEs often need to be shared between Scrum teams. This can cause blocking if their allocation can\'t be leveled between the teams.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.',
           points:15,
           correctAnswer:'B',
           answers: [
