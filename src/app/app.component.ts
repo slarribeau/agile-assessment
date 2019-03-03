@@ -49,7 +49,7 @@ export class AppComponent {
               this.questionThreeIndex=event;
             });  
   }
-  prevButton() {alert(this.router.url)}
+  prevButton() {alert("Please use browser \'back\' button.")}
   nextButton() {
     let x:string;
     if (this.router.url == "/") {

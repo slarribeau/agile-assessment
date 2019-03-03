@@ -140,59 +140,55 @@ export class QuestionDBService {
         {
           question:'How much formal Agile training has your team received?',
           passText:this.passText,
-          failText:'Agile is a big change for a team that has done waterfall for many years. Training across the entire team is critical. There will be added confusion if some of the team is trained and others aren\'t. Ideally the training is performed as a group. This can serve as team building as well as the team learns about the new methodology together.<br>Also, Consider including stakeholders in the training. It is a great way to reduce mis-understandings as you proceed in your transition.<br>Please contact slarribeau@solutionsati.com for more ideas on the best way to get your team(s) trained.',
+          failText:'Agile is a big change for a waterall team. There will be added confusion if only some of the team is trained. Training across the entire team is critical.<br><br>>&nbsp;&nbsp;&nbsp;o <b>Team Building</b> --  Training performed as a group is ideal, which can double as a team building exercise. <br><br> >&nbsp;&nbsp;&nbsp;o <b>Stakeholders</b> -- Consider including stakeholders in the training. It is a great way to reduce mis-understandings as you proceed in your transition.<br><br>Please contact slarribeau@solutionsati.com for more ideas on the best way to get your team(s) trained.',
           points:15,
-          correctAnswer:'E',
+          correctAnswer:'D',
           answers: [
             {
               name:'None',
               value:'A'
             },
             {
-              name:'The Product Owners and Scrum Masters received formal training, but not the Developers and Stakeholders.',
+              name:'The Product Owners, Scrum Masters, and Developers all received Agile training',
               value:'B'
             },
             {
-              name:'The Product Owners, Scrum Masters and Developers received training, but not the Stakeholders.',
+              name:'The Product Owners, Scrum Masters and Development Leads received Agile training',
 
               value:'C'
             },
             {
-              name:'The Product Owners, Scrum Masters, Developers received training, but not the Stakeholders.',
+              name:'The Product Owners, Scrum Masters, Developers and Stakeholders all received Agile training.',
               value:'D'
-            },
-            {
-              name:'The Product Owners, Scrum Masters, Developers and Stakeholders all received formal Agile training.',
-              value:'E'
             },
           ],
         },
+
         {
           question:'Are your Scrum teams cross-functional?',
           passText:this.passText,
-          failText:'Teams that are not cross-functional suffer from the following: <br>1) Dependencies <br>2) The dependencies add wait states<br>3)This in turn makes achieving momentum harder<br>4)Lots of autonomy.<br>Please contact slarribeau@solutionsati.com for more ideas on this topic',
+          failText:'Cross-functional teams benefit from the following: <br><br>&nbsp;&nbsp;&nbsp;o <b>Speed Of Experimentation</b> -- Having all the skills needed to develop features on a scrum team allows them to quickly build experiments. This in turn speed up the discovery process for good ideas.<br><br>&nbsp;&nbsp;&nbsp;o <b>Efficient Communications</b> -- The team can share information in their daily standups without the overhead of communicating through scrum of scrums or some other cross scrum team coordination mechanism.<br><br>&nbsp;&nbsp;&nbsp;o <b>Impact</b> -- Cross-functional teams allow every individual to see the impact of their efforts. This can be difficult when you have silos.<br><br>&nbsp;&nbsp;&nbsp;o <b>Autonomy</b> -- The cross-functional team can organize itself to meet the best way that they see fit. This unchains a lot of collective intelligence that exists on the team. Compare this to a highly silo\'d project where each team only sees a little bit of the project. <br><br>Please contact slarribeau@solutionsati.com for more ideas on this topic',
           points:15,
           correctAnswer:'E',
           answers: [
             {
-              name:'A significant portion of what is needed to get the stories to done exists outside of the team.',
+              name:'Stories can be completed without help from outside the team. There is little cross training among team members',
               value:'A'
             },
             {
-              name:'Some of the skills necessary to get the stories to done exists outside of the team.',
-
+              name:'A significant portion of what is needed to complete stories exists outside of the team.',
               value:'B'
             },
             {
-              name:'All of the necessary skills for performing the work exist on the team.',
+              name:'A small portion of what is needed to complete stories exists outside of the team',
               value:'C'
             },
             {
-              name:'All of the necessary skills for performing the work exist on the team and there is some cross training of skills.',
+              name:'Stories can be completed without help from outside of the team and there is some cross training of the necessary skills.',
               value:'D'
             },
             {
-              name:'All of the necessary skills for performing the work exist on the team and most of the team is cross trained on most of those skills.',
+              name:'Stories can be completed without help from outside of the team and most of the team is cross trained.',
               value:'E'
             }
           ],
