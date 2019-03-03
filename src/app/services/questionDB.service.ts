@@ -196,31 +196,30 @@ export class QuestionDBService {
         {
           question:'How much time are Scrum team members spending on their Scrum team assignments?',
           passText:this.passText,
-          failText:'It is common to see new Scrum teams struggle to build momentum in larger organizations. This is often attributed to the following factors:<br><br>- Team members may be double booked. They may have other formal responsibilities besides being a member of the Scrum team.<br>- High priority borrowing -- Issues may arise that the Scrum team member has experience in resolving. This can be hard for all parties to resist if its a crisis.<br>- Team members have lots of informal responsibilities in addition to their formal job description. This comes from expertise built up in previous roles in the company. They may be asked for advice on a problem, or to make a "small" fix in a module they originally wrote. These small interruptions add up.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.<br>',
+          failText:'It is common to see new Scrum teams struggle to build momentum in larger organizations. This is often attributed to the following factors:<br><br>&nbsp;&nbsp;&nbsp;o <b>Double Booking</b> -- Team members may have other formal responsibilities besides being a member of the Scrum team.<br><br>&nbsp;&nbsp;&nbsp;o <b>High priority borrowing</b> -- Issues may arise that the Scrum team member has experience in resolving. This can be hard for all parties to resist if its a crisis.<br><br>&nbsp;&nbsp;&nbsp;o <b>Informal Responsibilities</b> -- Team members have lots of informal responsibilities in addition to their formal job description. This comes from expertise built up in previous roles in the company. They may be asked for advice on a problem, or to make a "small" fix in a module they originally wrote. These small interruptions add up.<br><br>Please contact slarribeau@solutionsati.com for more ideas on how to improve in this area.<br>',
           points:15,
-          correctAnswer:'B',
+          correctAnswer:'D',
           answers: [
             {
-              name:'Its all over the map. Some sprints its 100% and some sprints team members are completely un-available',
-
-              value:'A'
-            },
-            {
                 name:'Less than 1/4 of their time.',
-                value:'B'
+                value:'A'
             },
             {
                 name:'1/4 to 1/2 of their time.',
-                value:'C'
+                value:'B'
             },
             {
               name:'1/2 to 3/4 of their time.',
-              value:'D'
+              value:'C'
             },
             {
               name:'3/4 of their time or more.',
+              value:'D'
+            },
+            {
+              name:'There is a big variance. Some sprints it\'s 100% and on some sprints, team members are completely un-available',
               value:'E'
-            }
+            },
           ],
         }
       ]

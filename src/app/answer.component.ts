@@ -24,7 +24,7 @@ export class AnswerComponent implements OnInit {
     this.foo=myQuestionDBService;
     this.score=25;
     this.displayCorrect="You selected the best answer!";
-    this.displayInCorrect="Your answer was not the best answer:";
+    this.displayInCorrect="Your did not select the best answer:";
     console.log("answer constructor begin")
     console.log(this.level)
     console.log(this.myQuestionSet)
