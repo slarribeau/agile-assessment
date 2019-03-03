@@ -49,25 +49,14 @@
                 <br>
                 <img src="assets/fail.png" alt="some text" width=16 height=16 style="float:left;">
                 {{this.answerOne}})&nbsp;"
-                {{this.myQuestionSet.questions[0].answers[this.answerOne.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
 
+                {{this.myQuestionSet.questions[0].answers[this.answerOne.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
             </h4>
             <h4 
             [innerHTML]="this.myQuestionSet.questions[0].failText">
             </h4>
         </div> 
-        <div class="question_box">
-        <h2>Question 2</h2>
-        <h3>
-        {{this.myQuestionSet.questions[0].question}}
-        </h3>
-        <ul class="list-group">
-                <li class="list-group-item" *ngFor="let item of this.myQuestionSet.questions[0].answers">
-                  <input type="radio" value="{{item.value}}"  />
-                  {{item.name}}
-                </li>
-              </ul>            
-        </div>       
+
     </ng-template>
  </div>
 
@@ -84,9 +73,6 @@
          </div>
          <div class="inner_box_framed">
              <h4>
-                 {{this.myQuestionSet.questions[1].correctAnswer}} is Correct
-             </h4>
-             <h4
              [innerHTML]="this.myQuestionSet.questions[1].passText">
              </h4>
          </div>  
@@ -98,9 +84,18 @@
             </div>
          <div class="inner_box_framed">
              <h4>
-                 {{this.myQuestionSet.questions[1].correctAnswer}} is Correct
-             </h4>
-             <h4 
+                    <img src="assets/pass.png" alt="some text" width=16 height=16 style="float:left;">
+
+                    {{this.myQuestionSet.questions[1].correctAnswer}})&nbsp;"
+                 
+                    {{this.myQuestionSet.questions[1].answers[this.myQuestionSet.questions[1].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
+                    <br>
+                    <img src="assets/fail.png" alt="some text" width=16 height=16 style="float:left;">
+                    {{this.answerTwo}})&nbsp;"
+    
+                    {{this.myQuestionSet.questions[1].answers[this.answerTwo.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"    
+             </h4>        
+             <h4
              [innerHTML]="this.myQuestionSet.questions[1].failText">
              </h4>
          </div>        
@@ -134,27 +129,20 @@
             </div>
           <div class="inner_box_framed">
               <h4>
-                  {{this.myQuestionSet.questions[2].correctAnswer}} is Correct
+                    <img src="assets/pass.png" alt="some text" width=16 height=16 style="float:left;">
+
+                    {{this.myQuestionSet.questions[2].correctAnswer}})&nbsp;"
+                 
+                    {{this.myQuestionSet.questions[2].answers[this.myQuestionSet.questions[2].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
+                    <br>
+                    <img src="assets/fail.png" alt="some text" width=16 height=16 style="float:left;">
+                    {{this.answerThree}})&nbsp;"
+    
+                    {{this.myQuestionSet.questions[2].answers[this.answerThree.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"              
               </h4>
               <h4 
               [innerHTML]="this.myQuestionSet.questions[2].failText">
               </h4>
           </div>        
       </ng-template>
-   </div>
-<!--
-  <h2>{{line1}}</h2>
-  <h2>{{line2}}</h2>
-  <h2 style="color:red">{{line3}}</h2>
-  <h2>{{line4}}</h2>
----------------------------------
-  <h2>{{line5}}</h2>
-  <h2>{{line6}}</h2>
-  <h2 style="color:red">{{line7}}</h2>
-  <h2>{{line8}}</h2>
---------------------------------------
-  <h2>{{line9}}</h2>
-  <h2>{{line10}}</h2>
-  <h2 style="color:red">{{line11}}</h2>
-  <h2>{{line12}}</h2>
--->
+</div>
