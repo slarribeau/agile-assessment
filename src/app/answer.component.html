@@ -27,7 +27,7 @@
         </div>
         <div class="inner_box_framed">
             <h4>
-                {{this.myQuestionSet.questions[0].correctAnswer}} is Correct
+                {{this.myQuestionSet.questions[0].correctAnswer}} {{this.myQuestionSet.questions[0].answers[this.myQuestionSet.questions[0].correctAnswer.charCodeAt(0)-'A'.charCodeAt(0)]}}<br>is Correct
             </h4>
             <h4
             [innerHTML]="this.myQuestionSet.questions[0].passText">
@@ -42,11 +42,40 @@
         <div class="inner_box_framed">
             <h4>
                 {{this.myQuestionSet.questions[0].correctAnswer}} is Correct
+                <br>
+                {{this.myQuestionSet.questions[0].correctAnswer}} 
+                <br>
+                {{this.myQuestionSet.questions[0].answers[2].name}}
+                <br>
+                {{this.myQuestionSet.questions[0].answers[2].value}}
+
+                <br>
+                {{'A'.charCodeAt(0)}}
+                <br>
+                {{  this.myQuestionSet.questions[0].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)}}
+                <br>
+                is Correct
+                <br>    
+                {{this.myQuestionSet.questions[0].correctAnswer}})&nbsp;"
+             
+                {{this.myQuestionSet.questions[0].answers[this.myQuestionSet.questions[0].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"&nbsp; is the correct answer.
             </h4>
             <h4 
             [innerHTML]="this.myQuestionSet.questions[0].failText">
             </h4>
-        </div>        
+        </div> 
+        <div class="question_box">
+        <h2>Question 2</h2>
+        <h3>
+        {{this.myQuestionSet.questions[0].question}}
+        </h3>
+        <ul class="list-group">
+                <li class="list-group-item" *ngFor="let item of this.myQuestionSet.questions[0].answers">
+                  <input type="radio" value="{{item.value}}"  />
+                  {{item.name}}
+                </li>
+              </ul>            
+        </div>       
     </ng-template>
  </div>
 
