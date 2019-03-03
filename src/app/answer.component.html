@@ -41,24 +41,16 @@
         </div>
         <div class="inner_box_framed">
             <h4>
-                {{this.myQuestionSet.questions[0].correctAnswer}} is Correct
-                <br>
-                {{this.myQuestionSet.questions[0].correctAnswer}} 
-                <br>
-                {{this.myQuestionSet.questions[0].answers[2].name}}
-                <br>
-                {{this.myQuestionSet.questions[0].answers[2].value}}
+                <img src="assets/pass.png" alt="some text" width=16 height=16 style="float:left;">
 
-                <br>
-                {{'A'.charCodeAt(0)}}
-                <br>
-                {{  this.myQuestionSet.questions[0].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)}}
-                <br>
-                is Correct
-                <br>    
                 {{this.myQuestionSet.questions[0].correctAnswer}})&nbsp;"
              
-                {{this.myQuestionSet.questions[0].answers[this.myQuestionSet.questions[0].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"&nbsp; is the correct answer.
+                {{this.myQuestionSet.questions[0].answers[this.myQuestionSet.questions[0].correctAnswer.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
+                <br>
+                <img src="assets/fail.png" alt="some text" width=16 height=16 style="float:left;">
+                {{this.answerOne}})&nbsp;"
+                {{this.myQuestionSet.questions[0].answers[this.answerOne.charCodeAt(0) - 'A'.charCodeAt(0)].name}}"
+
             </h4>
             <h4 
             [innerHTML]="this.myQuestionSet.questions[0].failText">
