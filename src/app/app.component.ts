@@ -27,7 +27,7 @@ export class AppComponent {
               private myInputService1:Q1Service, 
               private myInputService2:Q2Service, 
               private myInputService3:Q3Service, 
-              private router: Router) {
+              public router: Router) {
     myInputService.child$.subscribe(
       event => {
         console.log("parent just got: " + event);
